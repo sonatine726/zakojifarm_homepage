@@ -1,12 +1,22 @@
 @charset "UTF-8"
 
+/* This css is based on FLOCSS. */
+
+/* Foundation*/
+
+/* Layout */
 html{
   font-size: 62.5%;
 }
+
 body{
+  margin: 0 auto;
   color: #333;
   font-size: 1.2rem;
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  width: 970px;
+  /*background-image: linear-gradient(-90deg, #F4F7E3, #C7FFC8);*/
+  text-align: center;
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -16,11 +26,6 @@ a:link, a:visited, a:hover, a:active{
   text-decoration: none;
 }
 
-body{
-  width: 970px;
-  height: 900px;
-  background-image: linear-gradient(-90deg, #F4F7E3, #C7FFC8);
-}
 .header{
   width: 100%;
   border-bottom: 1px solid black;
@@ -47,23 +52,58 @@ body{
   color: #FE9A2E;
 }
 
-.p-farmer1 > .p-farmer1-img-box{
-  width: 600px;
-  margin: 5px auto;
-  padding:7px;
-  border:1px solid #ccc;
-  background:#fff;  
+.footer{
+  text-align: center;
+}
+.copyright{
+  margin-top: 10rem;
+  font-size: 0.8rem; 
 }
 
-.p-farmer1 > .p-farmer1-img-box > img{
+
+
+/* Object */
+/** Component */
+
+/** Project */
+.p-introduction-img-box-landscape{
+  width: 800px;
+  margin: 10px auto;
+  padding:7px;
+  border:1px solid #ccc;
+  background:#fff;
+}
+.p-introduction-img-box-portrait{
+  width: 600px;
+  margin: 10px auto;
+  padding:7px;
+  border:1px solid #ccc;
+  background:#fff;
+}
+.p-introduction-img-box-landscape > img,
+.p-introduction-img-box-portrait > img{
   width: 100%;
-  height: 100%;
+}
+.p-aspiration{
+  height: 10rem;
+}
+.p-aspiration-content{
+  position: relative;
+}
+.p-aspiration-txtbox{
+  position: absolute;
+  left: 5rem;
+  text-align: left;
+}
+.p-aspiration-txtbox::after{
+  display:block;
 }
 .p-farmer-expl{
   font-family: 'HGS教科書体';
   font-size: 0;
   width: 600px;
-  margin: 0px auto;
+  margin: 30px auto;
+  text-align: left;
 }
 .p-farmer-exple-title{
   width: 20%;
@@ -74,4 +114,19 @@ body{
   width: 80%;
   font-size: 1.8rem;
   display: inline-block;
+}
+
+/** Utility */
+/*** clearfix*/
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.u-fade-in {
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
 }
