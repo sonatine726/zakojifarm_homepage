@@ -1,0 +1,77 @@
+@charset "UTF-8"
+
+html{
+  font-size: 62.5%;
+}
+body{
+  color: #333;
+  font-size: 1.2rem;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active{
+  color: #d03c56;
+  text-decoration: none;
+}
+
+body{
+  width: 970px;
+  height: 900px;
+  background-image: linear-gradient(-90deg, #F4F7E3, #C7FFC8);
+}
+.header{
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+.logo{
+  width: 400px;
+  margin: 0px auto;
+  font-family: 'HGP教科書体';
+  font-size: 4rem;
+  text-shadow:
+    white 1px 1px 0px,
+    white -1px 1px 0px,
+    white -1px -1px 0px,
+    white 1px -1px 0px,
+    white 1px 0px 0px,
+    white 0px 1px 0px,
+    white -1px 0px 0px,
+    white 0px -1px 0px;
+}
+.logo a{
+  display: inline-block;
+  margin: 20px auto 0;
+  color: #FE9A2E;
+}
+
+.p-farmer1 > .p-farmer1-img-box{
+  width: 600px;
+  margin: 5px auto;
+  padding:7px;
+  border:1px solid #ccc;
+  background:#fff;  
+}
+
+.p-farmer1 > .p-farmer1-img-box > img{
+  width: 100%;
+  height: 100%;
+}
+.p-farmer-expl{
+  font-family: 'HGS教科書体';
+  font-size: 0;
+  width: 600px;
+  margin: 0px auto;
+}
+.p-farmer-exple-title{
+  width: 20%;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.p-farmer-exple-value{
+  width: 80%;
+  font-size: 1.8rem;
+  display: inline-block;
+}
