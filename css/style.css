@@ -2,9 +2,139 @@
 
 /* This css is based on FLOCSS. */
 
-/* Foundation*/
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
 
-/* Layout */
+/* Reset
+   ----------------------------------------------------------------- */
+/**
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* http://cssreset.com
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+/*
+TODO will need to remove settings on HTML since we can't namespace it.
+TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html{
+color:#000;
+background:#FFF;
+}
+/*
+TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+TODO test putting a class on HEAD.
+- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+margin:0;
+padding:0;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset,
+img {
+border:0;
+}
+/*
+TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+font-style:normal;
+font-weight:normal;
+}
+ol,
+ul {
+list-style:none;
+}
+caption,
+th {
+text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-size:100%;
+font-weight:normal;
+}
+q:before,
+q:after {
+content:'';
+}
+abbr,
+acronym {
+border:0;
+font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+vertical-align:text-top;
+}
+sub {
+vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+*font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+color:#000;
+}
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset { display: none; }
+
+/* Base
+   ----------------------------------------------------------------- */
 html{
   font-size: 62.5%;
 }
@@ -14,7 +144,6 @@ body{
   color: #333;
   font-size: 1.2rem;
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  width: 970px;
   /*background-image: linear-gradient(-90deg, #F4F7E3, #C7FFC8);*/
   text-align: center;
 }
@@ -26,97 +155,105 @@ a:link, a:visited, a:hover, a:active{
   text-decoration: none;
 }
 
-.header{
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+#header{
   width: 100%;
   border-bottom: 1px solid black;
   padding-bottom: 15px;
 }
-.logo{
-  width: 400px;
-  margin: 0px auto;
-  font-family: 'HGP教科書体';
-  font-size: 4rem;
-  text-shadow:
-    white 1px 1px 0px,
-    white -1px 1px 0px,
-    white -1px -1px 0px,
-    white 1px -1px 0px,
-    white 1px 0px 0px,
-    white 0px 1px 0px,
-    white -1px 0px 0px,
-    white 0px -1px 0px;
+#footer{
+  width: 80%;
+  margin: 0 auto;
 }
-.logo a{
-  display: inline-block;
-  margin: 20px auto 0;
-  color: #FE9A2E;
-}
-
-.footer{
-  text-align: center;
-}
-.copyright{
-  margin-top: 10rem;
+#copyright{
   font-size: 0.8rem; 
 }
 
 
 
-/* Object */
-/** Component */
+/* ==========================================================================
+   Object
+   ========================================================================== */
+
+/* Component
+   ----------------------------------------------------------------- */
+.logo{
+  width: 80%;
+  margin: 1% auto 0%;
+}
+
+
+/* Project
+   ----------------------------------------------------------------- */
 
 /** Project */
-.p-introduction-img-box-landscape{
-  width: 800px;
-  margin: 10px auto;
-  padding:7px;
-  border:1px solid #ccc;
-  background:#fff;
+.p-main-art{
+  width: 80%;
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 1% 1%;
 }
-.p-introduction-img-box-portrait{
-  width: 600px;
-  margin: 10px auto;
-  padding:7px;
-  border:1px solid #ccc;
-  background:#fff;
+.p-main-art-img > img{
+  width: 100%;  
+  height:auto;
 }
-.p-introduction-img-box-landscape > img,
-.p-introduction-img-box-portrait > img{
-  width: 100%;
-}
-.p-aspiration{
-  height: 10rem;
-}
-.p-aspiration-content{
-  position: relative;
-}
-.p-aspiration-txtbox{
-  position: absolute;
-  left: 5rem;
+.p-main-art-txt{
   text-align: left;
 }
-.p-aspiration-txtbox::after{
-  display:block;
-}
 .p-farmer-expl{
-  font-family: 'HGS教科書体';
+    margin:1% 0;
+    position: relative;
+    padding: 1% 2%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+}
+.p-farmer-expl:before, .p-farmer-expl:after{
+    content: '';
+    position: absolute;
+    top: -4%;
+    width: 1px;
+    height: 108%;
+    background-color: black;
+}
+.p-farmer-expl:before {left: 1%;}
+.p-farmer-expl:after {right: 1%;}
+.p-farmer-expl-img{
+  width: 25%;
+  float:left;
+  margin-top: 3%;
+}
+.p-farmer-expl-img > img{
+  width: 100%;  
+  height:auto;
+}
+.p-farmer-expl-box{
+  width: 75%;
   font-size: 0;
-  width: 600px;
-  margin: 30px auto;
+  float:left;
+}
+.p-farmer-expl-txt{
+  margin: 4% auto;
   text-align: left;
 }
 .p-farmer-exple-title{
+  font-size: 1.2rem;
   width: 20%;
-  font-size: 1.8rem;
   display: inline-block;
 }
 .p-farmer-exple-value{
+  font-size: 1.2rem;
   width: 80%;
-  font-size: 1.8rem;
   display: inline-block;
 }
 
-/** Utility */
+
+/* Utility
+   ----------------------------------------------------------------- */
 /*** clearfix*/
 .clearfix:after {
     content:" ";
