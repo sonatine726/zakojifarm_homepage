@@ -150,8 +150,8 @@ body{
   color: #333;
   font-size: 1.2rem;
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  /*background-image: linear-gradient(-90deg, #F4F7E3, #C7FFC8);*/
   text-align: center;
+  background-color: #F9FAED;
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -167,9 +167,16 @@ a:link, a:visited, a:hover, a:active{
    ========================================================================== */
 
 #header{
+  position: relative;
   width: 100%;
-  border-bottom: 1px solid black;
-  padding-bottom: 15px;
+}
+#header:after{
+  content: "";
+  display: block;
+  position: relative;
+  top: -7px;
+  height: 1px;
+  background-color: #cccccc;
 }
 #footer{
   width: 80%;
@@ -187,8 +194,8 @@ a:link, a:visited, a:hover, a:active{
 
 /* Component
    ----------------------------------------------------------------- */
-.logo{
-  width: 80%;
+.c-logo__img{
+  width: 70%;
   margin: 1% auto 0%;
 }
 
@@ -197,6 +204,31 @@ a:link, a:visited, a:hover, a:active{
    ----------------------------------------------------------------- */
 
 /** Project */
+.p-smallmap{
+  position: absolute;
+  top: 10%;
+  width: 20%;
+  left: 82%;
+}
+.p-smallmap__img{
+  width: 100%;
+  margin: 1% auto 0%;
+}
+.p-sns-icon-ul{
+  position: absolute;
+  top: 74%;
+  left: 84%;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.p-sns-icon{
+  display: inline-block;
+  width: 20%;
+}
+.p-sns-icon__img{
+  width: 100%;
+}
 .p-main-art{
   width: 80%;
   margin: 0 auto;
