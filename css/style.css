@@ -169,12 +169,13 @@ a:link, a:visited, a:hover, a:active{
 #header{
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 #header:after{
   content: "";
   display: block;
   position: relative;
-  top: -7px;
+  top: -3px;
   height: 1px;
   background-color: #cccccc;
 }
@@ -206,6 +207,7 @@ a:link, a:visited, a:hover, a:active{
 /** Project */
 .p-smallmap{
   position: absolute;
+  float:left;
   top: 10%;
   width: 18%;
   left: 82%;
@@ -216,6 +218,7 @@ a:link, a:visited, a:hover, a:active{
 }
 .p-sns-icon-ul{
   position: absolute;
+  float: left;
   top: 75%;
   left: 84%;
   width: 15%;
@@ -227,7 +230,7 @@ a:link, a:visited, a:hover, a:active{
   position: absolute;
   height: 1px;
   width: 100%;
-  top: 100%;
+  top: 90%;
   background-color: #FFD44D;
   animation: k-sns-icon-scale 1s ease-out;
 }
