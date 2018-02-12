@@ -213,16 +213,16 @@ a:link, a:visited, a:hover, a:active{
   min-width: 16.3%;
   border-radius: 0.5rem;
   background: linear-gradient(180deg, #F6FF4D, #FFC800);
-  font-size: 0.01rem;
-  font-weight:1000;
+  font-size: 0.9rem;
   color: #6c6c6c;
   font-family :YuMincho,'Yu Mincho',serif;
   box-shadow: 3px 3px 6px -2px #555, 2px 2px 5px rgba(255,255,255,0.8) inset;
+  transition: transform 0.3s ease-in-out;
 }
 /* Media for PC and Tablet*/
 @media screen and (min-width: 960px){
 .c-gnav-item{
-   font-size: 1rem;
+   font-weight:1000;
   }
 }
 .c-gnav-item > a{
@@ -232,7 +232,10 @@ a:link, a:visited, a:hover, a:active{
   align-items: center;
   justify-content: center;
 }
-
+.c-gnav-item:hover{
+  background: linear-gradient(180deg, #F6FF4D, #aaC800);
+  transform: scale(1.1, 1.1);
+}
 
 /* Project
    ----------------------------------------------------------------- */
@@ -278,6 +281,10 @@ a:link, a:visited, a:hover, a:active{
 .p-sns-icon{
   display: inline-block;
   width: 20%;
+  transition: transform 0.3s ease-in-out;
+}
+.p-sns-icon:hover{
+  transform: scale(1.2, 1.2);
 }
 .p-sns-icon__img{
   width: 100%;
