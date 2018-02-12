@@ -139,10 +139,10 @@ html{
   font-size: 62.5%;
 }
 /* Media for PC and Tablet*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 960px){
 	html{
-  	font-size: 100%;
-	}	
+	 font-size: 100%;
+	}
 }
 
 body{
@@ -169,14 +169,14 @@ a:link, a:visited, a:hover, a:active{
 #header{
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 #header:after{
   content: "";
-  display: block;
-  position: relative;
-  top: -3px;
+  position: absolute;
+  top: 102%;
+  left:0;
   height: 1px;
+  width: 100%;
   background-color: #cccccc;
 }
 #footer{
@@ -195,9 +195,42 @@ a:link, a:visited, a:hover, a:active{
 
 /* Component
    ----------------------------------------------------------------- */
+.c-title-and-sns{
+  position: relative;
+  overflow: hidden;
+}
 .c-logo__img{
   width: 70%;
   margin: 1% auto 0%;
+}
+.c-gnav-box{
+  height: 3rem;
+  display: flex;
+  justify-content:space-between;
+}
+.c-gnav-item{
+  height: 100%;
+  min-width: 16.3%;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, #F6FF4D, #FFC800);
+  font-size: 0.01rem;
+  font-weight:1000;
+  color: #6c6c6c;
+  font-family :YuMincho,'Yu Mincho',serif;
+  box-shadow: 3px 3px 6px -2px #555, 2px 2px 5px rgba(255,255,255,0.8) inset;
+}
+/* Media for PC and Tablet*/
+@media screen and (min-width: 960px){
+.c-gnav-item{
+   font-size: 1rem;
+  }
+}
+.c-gnav-item > a{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -265,10 +298,9 @@ a:link, a:visited, a:hover, a:active{
 .p-farmer-expl{
     margin:1% 0;
     position: relative;
-    padding: 1% 2%;
+    padding: 1% 1%;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
-    overflow: hidden;
 }
 .p-farmer-expl:before, .p-farmer-expl:after{
     content: '';
@@ -285,6 +317,9 @@ a:link, a:visited, a:hover, a:active{
   float:left;
   margin-top: 3%;
 }
+.p-farmer-expl-wrapper{
+  overflow: hidden;
+}
 .p-farmer-expl-img > img{
   width: 100%;  
   height:auto;
@@ -299,12 +334,12 @@ a:link, a:visited, a:hover, a:active{
   text-align: left;
 }
 .p-farmer-exple-title{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 20%;
   display: inline-block;
 }
 .p-farmer-exple-value{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 80%;
   display: inline-block;
 }
