@@ -130,7 +130,7 @@ select {
 legend {
 color:#000;
 }
-/* YUI CSS Detection Stamp */
+/*YUI CSS Detection Stamp*/
 #yui3-css-stamp.cssreset { display: none; }
 
 /* Base
@@ -138,7 +138,7 @@ color:#000;
 html{
   font-size: 62.5%;
 }
-/* Media for PC and Tablet*/
+/* Media for PC and Tablet */
 @media screen and (min-width: 960px){
 	html{
 	 font-size: 100%;
@@ -152,7 +152,7 @@ body{
   font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   text-align: center;
   background-color: #F9FAED;
-  max-width: 900px;
+  max-width: 960px;
 }
 *,*::before,*::after{
   box-sizing: border-box;
@@ -168,7 +168,6 @@ a:link, a:visited, a:hover, a:active{
    ========================================================================== */
 #header{
   position: relative;
-  width: 100%;
 }
 #header:after{
   content: "";
@@ -180,7 +179,6 @@ a:link, a:visited, a:hover, a:active{
   background-color: #cccccc;
 }
 #footer{
-  width: 80%;
   margin: 0 auto;
 }
 #copyright{
@@ -290,11 +288,29 @@ a:link, a:visited, a:hover, a:active{
 .p-sns-icon__img{
   width: 100%;
 }
-.p-main-art{
-  width: 80%;
+.p-top-imgs{
+  margin:2%;
+}
+.p-top-imgs img{
+  max-width: 100%;
+  height: auto;
+}
+.p-top-img-sld{
+  max-width: 100%;
+  margin: 0 auto 1%;
+  padding: 0 0.5%;
+}
+.p-top-img-sld-thumb{
+  max-width: 100%;
   margin: 0 auto;
+}
+.p-top-img-sld-thumb li{
+  margin: 0.1%;
+}
+.p-main-art{
+  margin: 1% auto;
   min-width: 320px;
-  padding: 1% 1%;
+  padding: 0 2%;
 }
 .p-main-art-img > img{
   width: 100%;  
@@ -303,26 +319,29 @@ a:link, a:visited, a:hover, a:active{
 .p-main-art-txt{
   text-align: left;
 }
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
 .p-sns-plugins{
   width: 100%;
-  margin: 0 auto;
+  margin: 5% auto;
   display: flex;
   justify-content:space-between;
 }
+}
 .p-farmer-expl{
-    margin:1% 0;
-    position: relative;
-    padding: 1% 1%;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+  margin:1% 0;
+  position: relative;
+  padding: 1% 1%;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
 }
 .p-farmer-expl:before, .p-farmer-expl:after{
-    content: '';
-    position: absolute;
-    top: -4%;
-    width: 1px;
-    height: 108%;
-    background-color: black;
+  content: '';
+  position: absolute;
+  top: -4%;
+  width: 1px;
+  height: 108%;
+  background-color: black;
 }
 .p-farmer-expl:before {left: 1%;}
 .p-farmer-expl:after {right: 1%;}
@@ -335,11 +354,12 @@ a:link, a:visited, a:hover, a:active{
   overflow: hidden;
 }
 .p-farmer-expl-img > img{
-  width: 100%;  
+  width: 100%;
   height:auto;
 }
 .p-farmer-expl-box{
   width: 75%;
+  margin-top: 3%;
   font-size: 0;
   float:left;
 }
@@ -358,19 +378,33 @@ a:link, a:visited, a:hover, a:active{
   display: inline-block;
 }
 
-
 /* Utility
    ----------------------------------------------------------------- */
-/*** clearfix*/
 .clearfix:after {
-    content:" ";
-    display:block;
-    clear:both;
+  content:" ";
+  display:block;
+  clear:both;
 }
-
 .u-fade-in {
   transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
+}
+/**
+ * Slick
+ */
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+  right: 1%;
+  z-index: 99;
+}
+.slick-prev {
+  left: 1%;
+  z-index: 100;
 }
