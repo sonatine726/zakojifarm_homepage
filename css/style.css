@@ -237,6 +237,7 @@ a:link, a:visited, a:hover, a:active{
   transform: scale(1.1, 1.1);
 }
 
+
 /* Project
    ----------------------------------------------------------------- */
 
@@ -301,6 +302,12 @@ a:link, a:visited, a:hover, a:active{
 }
 .p-main-art-txt{
   text-align: left;
+}
+.p-sns-plugins{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
 }
 .p-farmer-expl{
     margin:1% 0;
