@@ -195,11 +195,22 @@ a:link, a:visited, a:hover, a:active{
    ----------------------------------------------------------------- */
 .c-title-and-sns{
   position: relative;
-  overflow: hidden;
+  text-align: left;
+}
+.c-logo{
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 8%;
+}
+@media screen and (min-width: 960px){
+.c-logo{
+  margin-bottom: 3%;
+}
 }
 .c-logo__img{
-  width: 70%;
-  margin: 1rem auto 0;
+  width: 100%;
 }
 .c-gnav-box{
   height: 3rem;
@@ -220,6 +231,7 @@ a:link, a:visited, a:hover, a:active{
 /* Media for PC and Tablet*/
 @media screen and (min-width: 960px){
 .c-gnav-item{
+  font-size: 1.2rem;
    font-weight:1000;
   }
 }
@@ -242,30 +254,53 @@ a:link, a:visited, a:hover, a:active{
 /** Project */
 .p-smallmap{
   position: absolute;
-  float:left;
-  top: 10%;
+  top: 5%;
   width: 18%;
-  left: 82%;
+  left: 80%;
 }
 .p-smallmap__img{
   width: 100%;
-  margin: 0.5rem auto 0;
 }
-.p-sns-icon-ul{
+.p-iijima-string{
+  text-align: center;
+  font-size: 1rem;
+  font-family :YuMincho,'Yu Mincho',serif;
+}
+/* Media for PC and Tablet*/
+@media screen and (min-width: 960px){
+.p-iijima-string{
+  font-size: 1.5rem;
+}
+}
+.p-sns-icons{
+  display: inline-block;
+  width: 40%;
   position: absolute;
-  float: left;
-  top: 75%;
-  left: 84%;
-  width: 15%;
-  display: flex;
-  justify-content: space-between;
+  left: 60%;
+  top:90%;
 }
-.p-sns-icon-ul:after{
+@media screen and (min-width: 960px){
+.p-sns-icons{
+  width: 18%;
+  left: 80%;
+  top:90%;
+}
+}
+.p-sns-icons__box{
+  position: relative;
+}
+.p-sns-icon__ul{
+  display: flex;
+  justify-content: space-around;
+}
+.p-sns-icons__box::after{
+  display: block;
   content: "";
   position: absolute;
   height: 1px;
   width: 100%;
   top: 90%;
+  left: 0;
   background-color: #FFD44D;
   animation: k-sns-icon-scale 1s ease-out;
 }
