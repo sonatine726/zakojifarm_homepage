@@ -231,6 +231,7 @@ a:link, a:visited, a:hover, a:active{
 /* Media for PC and Tablet*/
 @media screen and (min-width: 960px){
 .c-gnav-item{
+  font-size: 1.2rem;
    font-weight:1000;
   }
 }
@@ -263,6 +264,7 @@ a:link, a:visited, a:hover, a:active{
 .p-iijima-string{
   text-align: center;
   font-size: 1rem;
+  font-family :YuMincho,'Yu Mincho',serif;
 }
 /* Media for PC and Tablet*/
 @media screen and (min-width: 960px){
