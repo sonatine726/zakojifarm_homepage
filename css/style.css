@@ -439,23 +439,43 @@ a:link, a:visited, a:hover, a:active{
 }
 .p-farmer-expl-box{
   width: 75%;
-  height: 100%;
   font-size: 0;
   display: table-cell;
   vertical-align: middle;
 }
 .p-farmer-expl-txt{
+  font-size: 1.5rem;
   text-align: left;
 }
+.p-farmer-expl-txt li{
+  height: 20px;
+  margin-bottom: 20px;
+}
 .p-farmer-exple-title{
-  font-size: 1.1rem;
   width: 20%;
-  display: inline-block;
+  display: table-cell;
 }
 .p-farmer-exple-value{
-  font-size: 1.1rem;
   width: 80%;
-  display: inline-block;
+  display: table-cell;
+}
+.p-sns-addr{
+  font-size: 1.2rem;
+}
+.p-sns-addr-title{
+  text-indent: 0.8rem;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+.p-farmer-expl-txt{
+  font-size: 1.1rem;
+}
+.p-sns-addr{
+  font-size: 0.9rem;
+}
+.p-farmer-expl-txt li{
+  margin-bottom: 10px;
+}
 }
 
 /* Utility
