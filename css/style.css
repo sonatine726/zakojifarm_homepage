@@ -495,12 +495,6 @@ a:link, a:visited, a:hover, a:active{
   display:block;
   clear:both;
 }
-.u-fade-in {
-  transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-}
 /**
  * Slick
  */
