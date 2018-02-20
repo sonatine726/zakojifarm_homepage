@@ -170,15 +170,6 @@ a:link, a:visited, a:hover, a:active{
 #header{
   position: relative;
 }
-#header:after{
-  content: "";
-  position: absolute;
-  top: 102%;
-  left:0;
-  height: 1px;
-  width: 100%;
-  background-color: #cccccc;
-}
 #footer{
   position: relative;
   padding-top: 1%;
@@ -222,6 +213,18 @@ a:link, a:visited, a:hover, a:active{
 }
 .c-logo__img{
   width: 100%;
+}
+.c-gnav{
+  position: relative;
+}
+.c-gnav::after{
+  content: "";
+  position: absolute;
+  top: 110%;
+  left:0;
+  height: 1px;
+  width: 100%;
+  background-color: #cccccc;
 }
 .c-gnav-box{
   height: 3rem;
@@ -298,7 +301,38 @@ a:link, a:visited, a:hover, a:active{
     transform: scale(1.1, 1.1);
   }
 }
-
+.c-breadcrumb{
+  margin:1rem 1rem 0;
+  text-align: left;
+}
+.c-breadcrumb li{
+  display:inline;
+}
+.c-breadcrumb li::after{
+  font-family: "Font Awesome 5 Free";
+  content: '\f0da';
+  font-weight: 900;
+  margin: 0 1rem;
+  color: #FFD44D;
+}
+.c-breadcrumb li:last-of-type::after{
+  content: '';
+}
+.c-breadcrumb li:first-child>a::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f015';
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-right: 0.2rem;
+  color: #FFD44D;
+}
+.c-breadcrumb li a:hover {
+  text-decoration: underline;
+}
+.c-breadcrumb li:last-of-type a{
+  pointer-events: none;
+  color: #888;
+}
 
 
 /* Project
@@ -377,7 +411,7 @@ a:link, a:visited, a:hover, a:active{
   width: 100%;
 }
 .p-top-imgs{
-  margin:2%;
+  margin:0.3% 2%;
 }
 .p-top-imgs img{
   max-width: 100%;
@@ -491,9 +525,9 @@ a:link, a:visited, a:hover, a:active{
 /* Utility
    ----------------------------------------------------------------- */
 .clearfix:after {
-  content:" ";
-  display:block;
-  clear:both;
+  content: "";
+  display: block;
+  clear: both;
 }
 /**
  * Slick
@@ -512,3 +546,7 @@ a:link, a:visited, a:hover, a:active{
   left: 1%;
   z-index: 100;
 }
+
+
+
+
