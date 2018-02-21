@@ -105,6 +105,52 @@
     <ol>
   </header>
   <main id="main">
+    <form action="./postmail.cgi" method="post" class="p-mailform">
+      <ul post" class="p-mailform__ul">
+        <li class="p-mailform__li">
+          <label for="inquiry__name" onclick=”“ class="p-mailform__label p-mailform-required-label">お名前(漢字)</label>
+          <div class="p-mailform__value">
+            <input type="text" id="inquiry__name" name="inquiry_name" autofocus required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__kana" onclick=”“ class="p-mailform__label p-mailform-required-label">お名前(フリガナ)</label>
+          <div class="p-mailform__value">
+            <input type="text" id="inquiry__kana" name="inquiry_kana" required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__mail" onclick=”“ class="p-mailform__label p-mailform-required-label">メールアドレス</label>
+          <div class="p-mailform__value">
+            <input type="email" id="inquiry__mail" name="inquiry_mail" required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__mail_confirm" onclick=”“ class="p-mailform__label p-mailform-required-label">メールアドレス<span class="p-address-check">(確認用)</span></label>
+          <div class="p-mailform__value">
+            <input type="email" id="inquiry__mail_confirm" name="inquiry_mail_confirm" required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__tel" onclick=”“ class="p-mailform__label">電話番号</label>
+          <div class="p-mailform__value">
+            <input type="tel" id="inquiry__tel" name="inquiry_tel" placeholder="" />
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__text" onclick=”“ class="p-mailform__label p-inquiryform-large-value-label p-mailform-required-label">お問い合わせ内容</label>
+          <div class="p-mailform__value">
+            <textarea id="inquiry__text" name="inquiry_text" required></textarea>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label class="p-mailform__label"></label>
+          <div class="p-mailform__value">
+            <button type='submit' name='send' class="p-mailform__button">送信</button>
+          </div>
+        </li>
+      </ul>
+    </form>
     <section class="p-underconst">
       <img src="images/underconst.gif" alt="工事中" class="p-underconst__img">
     </section>
