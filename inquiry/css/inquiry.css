@@ -10,7 +10,9 @@
 /* ==========================================================================
    Layout
    ========================================================================== */
-
+#main{
+  padding-top: 1rem;
+}
 /* ==========================================================================
    Object
    ========================================================================== */
@@ -20,13 +22,127 @@
 
 /* Project
    ----------------------------------------------------------------- */
-.p-underconst{
-  width: 40%;
-  margin: 5% auto;
+.p-mailform{
+  width: 90%;
+  margin: 0 auto;
+  border: solid 0.05rem #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
 }
-.p-underconst__img{
-   width: 100%;
-   height: auto;
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-mailform{
+    padding: 2rem;
+  }
+}
+.p-mailform__ul{
+  width: 100%;
+  display:table;
+  text-align: left;
+}
+.p-mailform__li{
+  display:table-row;
+  height: 3rem;
+}
+.p-mailform__label{
+  display: table-cell;
+  width: 40%;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-mailform__label{
+    display: table-cell;
+    width: 30%;
+  }
+}
+.p-mailform__value{
+  display: table-cell;
+  width: 100%;
+}
+.p-mailform__value > input{
+  width: 80%;
+}
+.p-mailform-required-label+.p-mailform__value::after{
+  content: "必須";
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-left: 3%;
+  padding: 0.5%;
+  border: solid 0.05rem;
+  opacity: 0.8;
+  background-color: #ffc0cb;
+  vertical-align: 10%;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-mailform__value{
+    width: 70%;
+  }
+  .p-mailform-required-label+.p-mailform__value::after{
+    content: none;
+  }
+  #inquiry__name,#inquiry__kana{
+    width: 50%;
+  }
+  #inquiry__mail,#inquiry__mail_confirm{
+    width: 70%;
+  }
+}
+.p-address-check{
+  font-size: 0.9rem;
+}
+#inquiry__text{
+  width: 18rem;
+  height: 15rem;
+}
+.p-mailform__value-text.p-mailform__value::after{
+  content: none;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  #inquiry__text{
+    width: 30rem;
+  }
+}
+.p-inquiryform-large-value-label{
+  vertical-align: top;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-mailform-required-label::after{
+    content: "必須";
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-left: 3%;
+    padding: 0.5%;
+    border: solid 0.05rem;
+    opacity: 0.8;
+    background-color: #ffc0cb;
+    vertical-align: 10%;
+  }
+}
+.p-mailform__button {
+  display: inline-block;
+  width: 50%;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #d9333f;
+  background-color: #f5e56b;
+  border: double 4px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-mailform__button {
+    width: 40%;
+  }
+}
+.p-mailform__button:hover {
+  background: #fffbef;
 }
 /* Utility
    ----------------------------------------------------------------- */

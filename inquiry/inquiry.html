@@ -105,9 +105,65 @@
     <ol>
   </header>
   <main id="main">
-    <section class="p-underconst">
-      <img src="images/underconst.gif" alt="工事中" class="p-underconst__img">
-    </section>
+    <form action="./MailForm01_utf8/mail.php" method="post" class="p-mailform">
+      <ul post" class="p-mailform__ul">
+        <li class="p-mailform__li">
+          <label for="inquiry__name" onclick=”“ class="p-mailform__label p-mailform-required-label">お名前(漢字)</label>
+          <div class="p-mailform__value">
+            <input type="text" id="inquiry__name" name="お名前(漢字)" autofocus required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__kana" onclick=”“ class="p-mailform__label p-mailform-required-label">お名前(フリガナ)</label>
+          <div class="p-mailform__value">
+            <input type="text" id="inquiry__kana" name="お名前(フリガナ)" required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__mail" onclick=”“ class="p-mailform__label p-mailform-required-label">メールアドレス</label>
+          <div class="p-mailform__value">
+            <input type="email" id="inquiry__mail" name="メールアドレス" required/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__mail_confirm" onclick=”“ class="p-mailform__label p-mailform-required-label p-mailform-mail_confirm">メールアドレス<span class="p-address-check">(確認用)</span></label>
+          <div class="p-mailform__value">
+            <input type="email" id="inquiry__mail_confirm" name="メールアドレス(確認用)" required oninput="CheckEmail(this)"/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__tel" onclick=”“ class="p-mailform__label">電話番号</label>
+          <div class="p-mailform__value">
+            <input type="tel" id="inquiry__tel" name="電話番号"/>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label for="inquiry__text" onclick=”“ class="p-mailform__label p-inquiryform-large-value-label p-mailform-required-label">お問い合わせ内容</label>
+          <div class="p-mailform__value p-mailform__value-text">
+            <textarea id="inquiry__text" name="お問い合わせ内容" required></textarea>
+          </div>
+        </li>
+        <li class="p-mailform__li">
+          <label class="p-mailform__label"></label>
+          <div class="p-mailform__value">
+            <button type='submit' class="p-mailform__button">送信</button>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+      function CheckEmail(input){
+        var mail = inquiry__mail.value;
+        var mailConfirm = input.value;
+        if(mail != mailConfirm){
+          input.setCustomValidity('メールアドレスが一致しません');
+        }else{
+          input.setCustomValidity('');
+        }
+      }
+    // -->
+    </script>
   </main>
   <footer id="footer">
      <nav class="c-subnav">
