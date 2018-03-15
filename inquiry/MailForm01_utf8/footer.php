@@ -15,7 +15,21 @@
     <article class="p-farmer-expl">
       <div class="p-farmer-expl-wrapper">
         <section class="p-farmer-expl-img">
-          <img src="../../images/ZakoniNoen_Icon_compact.png">
+          <section class="p-farmer-expl-sns-logo">
+            <img src="../images/ZakoniNoen_Icon_compact.png">
+          </section>
+          <section class="p-farmer-expl-sns-icons">
+            <div class="p-sns-icons__box">
+              <section class="p-sns-icon__list">
+                <ul class="p-sns-icon__ul">
+                  <li class="p-sns-icon"><a href="https://www.facebook.com/zakojifarm/"><img src="../images/FB_Icon.png" alt="座光寺農園Facebook" class="p-sns-icon__img"></a></li>
+                  <li class="p-sns-icon"><a href="https://www.instagram.com/zakojifarm/"><img src="../images/Insta_Icon.png" alt="座光寺農園Instagram" class="p-sns-icon__img"></a></li>
+                  <li class="p-sns-icon"><a href="https://twitter.com/zakojifarm"><img src="../images/Twit_Icon.png" alt="座光寺農園Twittter" class="p-sns-icon__img"></a></li>
+                  <li class="p-sns-icon"><a href="https://www.youtube.com/channel/UCfeU1UPUn7iktwZpWOkefFA"><img src="../images/YT_Icon.png" alt="座光寺農園YouTubeチャンネル" class="p-sns-icon__img"></a></li>
+                </ul>
+              </section>
+            </div>
+          </section>
         </section>
         <section class="p-farmer-expl-box">
           <ul class="p-farmer-expl-txt p-farmer-exple-title">
@@ -43,6 +57,9 @@
             <li class="p-sns-addr  p-sns-addr-title">
               Twitter:
             </li>
+            <li class="p-sns-addr  p-sns-addr-title">
+              Youtube:
+            </li>
           </ul>
           <ul class="p-farmer-expl-txt p-farmer-exple-value">
             <li>
@@ -69,6 +86,9 @@
             </li>
             <li class="p-sns-addr">
               <a href="https://twitter.com/zakojifarm" target="_blank">https://twitter.com/zakojifarm</a>
+            </li>
+            <li class="p-sns-addr">
+              <a href="https://www.youtube.com/channel/UCfeU1UPUn7iktwZpWOkefFA" target="_blank">https://www.youtube.com/channel/UCfeU1UPUn7iktwZpWOkefFA</a>
             </li>
           </ul>
         </section>
