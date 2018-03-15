@@ -532,6 +532,13 @@ a:link, a:visited, a:hover, a:active{
 /**
  * Slick
  */
+.p-top-img-sld,.p-top-img-sld-thumb{
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+.p-top-img-sld.slick-initialized,.p-top-img-sld-thumb.slick-initialized{
+  opacity: 1;
+}
 /*左右の矢印の色を変える*/
 .slick-prev:before,
 .slick-next:before{
