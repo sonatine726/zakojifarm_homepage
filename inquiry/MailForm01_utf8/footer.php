@@ -92,6 +92,9 @@
             </li>
           </ul>
         </section>
+        <section class="p-farmer-expl-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.2417563706213!2d137.92570701525878!3d35.684191880193666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c8d840d0edd15%3A0xd277c51203c00602!2z44CSMzk5LTM3MDIg6ZW36YeO55yM5LiK5LyK6YKj6YOh6aOv5bO255S66aOv5bO277yS77yQ77yZ77yR4oiS77yS!5e1!3m2!1sja!2sjp!4v1521077613359" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
       </div>
     </article>
     </div>
