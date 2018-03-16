@@ -416,6 +416,7 @@ a:link, a:visited, a:hover, a:active{
 .p-sns-icon{
   display: inline-block;
   width: 62%;
+  max-width: 5rem;
   transition: transform 0.3s ease-in-out;
 }
 .p-sns-icon:hover{
