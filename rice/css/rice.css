@@ -20,13 +20,23 @@
 
 /* Project
    ----------------------------------------------------------------- */
-.p-underconst{
-  width: 40%;
-  margin: 5% auto;
+.p-rice-spec-item{
+  text-align: left;
 }
-.p-underconst__img{
-   width: 100%;
-   height: auto;
+.p-rice-spec-txt{
+  font-size: 1rem;
+  margin: 1rem 5rem;
+}
+.p-rice-spec-txt p:first-letter{
+  font-size: 1.5rem;
+  color:#FFC800;
+}
+.p-rice-spec-iijima-image{
+  display: inline-block;
+  margin: 1rem auto;
+}
+.p-ricefield-list{
+  display: flex;
 }
 #p-ricefield-map_canvas{
    width: 400px;
@@ -35,4 +45,17 @@
  }
 /* Utility
    ----------------------------------------------------------------- */
+.u-img-trans-frame{
+  position:relative;
+}
+.u-img-trans-frame::before{
+  content:'';
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0px 4px rgba(255,255,255,0.6);
+}
 

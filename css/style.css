@@ -162,6 +162,43 @@ a:link, a:visited, a:hover, a:active{
   color: #d9333f;
   text-decoration: none;
 }
+h1 {
+  text-align: left;
+  position: relative;
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h1::after {
+  content: "";
+  display: block;
+  height: 0.25rem;
+  background: -moz-linear-gradient(to right, rgb(255, 200, 0), transparent);
+  background: -webkit-linear-gradient(to right, rgb(255, 200, 0), transparent);
+  background: linear-gradient(to right, rgb(255, 200, 0), transparent);
+}
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 5rem;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-bottom: solid 0.1rem rgba(255, 200, 0, 0.5);
+}
+h2::before{
+  background-image: url('../images/inaho_icon.png');
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -0.2rem;
+  left: -3rem;
+}
+
 
 
 /* ==========================================================================
