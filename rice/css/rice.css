@@ -28,6 +28,11 @@
    width: 100%;
    height: auto;
 }
+#p-ricefield-map_canvas{
+   width: 400px;
+   height: 400px;
+   margin: 0 auto;
+ }
 /* Utility
    ----------------------------------------------------------------- */
 
