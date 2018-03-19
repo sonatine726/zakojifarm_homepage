@@ -20,7 +20,7 @@ $(window).on('load',function(){
   }
 
   function addPolygon(mapObj){
-    function addRiceFieldPolygon(mapObj, polCenter, polArray, fieldName){
+    function addRiceFieldPolygon(mapObj, polCenter, polArray, fieldName, field_url){
       var leftTopPos = polArray[0];
       var polygonObj = new google.maps.Polygon({
           paths: polArray,
@@ -31,6 +31,9 @@ $(window).on('load',function(){
           fillOpacity: 0.35,
           map: mapObj
       });
+      polygonObj.addListener( "click", (function(url){
+        return function(){ location.href = url; };
+      })(field_url));
       
       var markerOptions = {
         color: "#eaedf7",
@@ -53,7 +56,7 @@ $(window).on('load',function(){
         {lat:35.68081923369538,lng:137.91668719066365},
         {lat:35.68081923369538,lng:137.9162660838483}
     ];
-    addRiceFieldPolygon(mapObj, polCenter, polArray, "星野城1");
+    addRiceFieldPolygon(mapObj, polCenter, polArray, "星野城1", "ricefields/ricefield_hoshinojo_1.html");
 
     //星野城2
     var polArray = [
@@ -62,9 +65,7 @@ $(window).on('load',function(){
         {lat:35.68081923369538,lng:137.91668719066365},
         {lat:35.68081923369538,lng:137.9162660838483}
     ];
-    addRiceFieldPolygon(mapObj, polArray, "星野城2");
-
-
+    addRiceFieldPolygon(mapObj, polArray, "星野城2", "ricefields/ricefield_hoshinojo_1.html");
   }
   viewGMap();
 });
