@@ -62,12 +62,13 @@
 #p-ricefield-map_canvas{
   width: 290px;
   height: 290px;
+  margin: 0 auto;
 }
 /* Media for PC and Tablet */
 @media screen and (min-width: 960px){
   .p-ricefield-list-map{
     flex-direction: row;
-    text-align: left;
+    justify-content: space-around;
    }
   .p-ricefield-list{
     width: 40%;
@@ -88,7 +89,7 @@
   text-align: left;
 }
 .p-rcf-map{
-  width: 100%;
+  width: 90%;
   margin: 4rem auto;
  }
 table.p-rcf-prop-tbl{
@@ -134,14 +135,14 @@ table.p-rcf-prop-tbl td.p-rcf-prop-tbl__bar{
 @media screen and (min-width: 960px){
   .p-ricefield-prop-map{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
   .p-rcf-prop{
-    width: 40%;
+    width: 45%;
   }
   .p-rcf-map{
-    width: 60%;
+    width: 45%;
    }
 }
 .p-ricefield-progress-material{
