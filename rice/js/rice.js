@@ -41,10 +41,19 @@ $(window).on('load',function(){
         label: markerOptions
       });
     }
+    function addPanFunctionToRiceFieldLink(mapObj, rfp)
+    {
+      if(rfp.linkLiDom){
+        rfp.linkLiDom.on('mouseover', function(){
+          mapObj.panTo(new google.maps.LatLng(rfp.polCenter.lat,rfp.polCenter.lng));
+        });
+      }
+    }
 
     function addRiceFieldPolygonSet(mapObj, riceFieldsProp){
       for(let rfp of riceFieldsProp){
         addRiceFieldPolygon(mapObj, rfp.polCenter, rfp.polArray, rfp.fieldName, rfp.url);
+        addPanFunctionToRiceFieldLink(mapObj, rfp);
       }
     }
 
@@ -60,7 +69,7 @@ $(window).on('load',function(){
   }
   else{
     centerPos = {lat:35.68177567810094, lng:137.91623926175816};
-    zoom = 15;
+    zoom = 17;
   }
   viewGMap(mapTargetId, centerPos, zoom, riceFields);
 });

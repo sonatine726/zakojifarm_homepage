@@ -18,8 +18,8 @@ args = sys.argv
 with open(args[1], 'r') as f:
     for row in f:
         pattern = r'{"id":"(\d+)","field_block_id":"(\d+)",.*?,'\
-                  r'"center_latlng_str":"([\d\.]+)#([\d\.]+)",.*?,'\
-                  r'"region_latlng_str":"([\d\.\#]+)",.*?}'
+                  r'"center_latlng_str":"([\d\.]+)#([\d\.]+)",.*?'\
+                  r'"region_latlng_str":"([\d\.\#]+)",.*?"field_name":"(.*?)"'
         mAll = re.findall(pattern, row)
         for m in mAll:
             field = {}
@@ -42,6 +42,7 @@ with open(args[1], 'r') as f:
                         "lng": region_latlng_array[i + 1]})
                 logger.debug("lat: " + region_latlng_array[i] +
                              "lng: " + region_latlng_array[i + 1])
+            field["field_name"] = m[5]
             riceFields.append(field)
 
-print(riceFields)
+print(str(riceFields).replace("'", "").replace("}, {lat", "},\n{lat").replace("}, {id", "},\n\n{id"))
