@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: column;
   margin: 3%;
+  align-items: center;
 }
 .p-ricefield-list{
   width: 100%;
@@ -58,13 +59,9 @@
   margin: 0 1rem;
   color: #FFD44D;
 }
-.p-ricefield-map{
-  margin: 2%;
-}
 #p-ricefield-map_canvas{
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
+  width: 290px;
+  height: 290px;
 }
 /* Media for PC and Tablet */
 @media screen and (min-width: 960px){
@@ -75,6 +72,10 @@
   .p-ricefield-list{
     width: 40%;
     height: 26rem;
+  }
+  #p-ricefield-map_canvas{
+    width: 400px;
+    height: 400px;
   }
 }
 .p-ricefield-prop-map{
