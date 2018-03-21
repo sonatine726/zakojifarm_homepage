@@ -44,7 +44,7 @@ $(window).on('load',function(){
     function addPanFunctionToRiceFieldLink(mapObj, rfp)
     {
       if(rfp.linkLiDom){
-        rfp.linkLiDom.on('mouseover', function(){
+        rfp.linkLiDom.children('a').on('mouseover', function(){
           mapObj.panTo(new google.maps.LatLng(rfp.polCenter.lat,rfp.polCenter.lng));
         });
       }

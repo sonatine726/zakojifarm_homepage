@@ -17,7 +17,7 @@ riceFields = []
 args = sys.argv
 with open(args[1], 'r') as f:
     for row in f:
-        pattern = r'{"id":"(\d+)","field_block_id":"(\d+)",.*?,'\
+        pattern = r'{"id":"(\d+)","field_block_id":(.+?),.*?,'\
                   r'"center_latlng_str":"([\d\.]+)#([\d\.]+)",.*?'\
                   r'"region_latlng_str":"([\d\.\#]+)",.*?"field_name":"(.*?)"'
         mAll = re.findall(pattern, row)

@@ -182,7 +182,8 @@ h2 {
   display: inline-block;
   margin-left: 5rem;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  word-wrap:normal;
   font-weight: 500;
   border-bottom: solid 0.1rem rgba(255, 200, 0, 0.5);
 }
@@ -190,13 +191,26 @@ h2::before{
   background-image: url('../images/inaho_icon.png');
   content: "";
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   position: absolute;
-  top: -0.2rem;
-  left: -3rem;
+  top: -1rem;
+  left: -3.5rem;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  h2 {
+    font-size: 1.3rem;
+  }
+  h2::before{
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    top: -0.2rem;
+    left: -3rem;
+  }
 }
 
 
@@ -645,6 +659,9 @@ h2::before{
   content: "";
   display: block;
   clear: both;
+}
+.u-nowrap-phrase{
+  display: inline-block;
 }
 /**
  * Slick

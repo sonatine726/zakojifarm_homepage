@@ -34,14 +34,22 @@
 .p-rice-spec-iijima-image{
   display: inline-block;
   margin: 1rem auto;
+  width: 90%;
+  height: auto;
 }
 .p-ricefield-list-map{
   display: flex;
+  flex-direction: column;
   margin: 3%;
 }
 .p-ricefield-list{
-  width: 40%;
+  width: 100%;
+  height: 13rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-content: space-around;
 }
 .p-ricefield-list li::before{
   font-family: "Font Awesome 5 Free";
@@ -51,25 +59,35 @@
   color: #FFD44D;
 }
 .p-ricefield-map{
-  width: 60%;
+  margin: 2%;
 }
 #p-ricefield-map_canvas{
   width: 400px;
   height: 400px;
   margin: 0 auto;
 }
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-ricefield-list-map{
+    flex-direction: row;
+    text-align: left;
+   }
+  .p-ricefield-list{
+    width: 40%;
+    height: 26rem;
+  }
+}
 .p-ricefield-prop-map{
-  margin: 5%;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 .p-rcf-prop{
-  width: 40%;
+  width: 80%;
   text-align: left;
 }
 .p-rcf-map{
-  width: 60%;
+  width: 100%;
   margin: 4rem auto;
  }
 table.p-rcf-prop-tbl{
@@ -110,6 +128,36 @@ table.p-rcf-prop-tbl td.p-rcf-prop-tbl__bar{
   height: 1px;
   width: 100%;
   border-top: solid 1px #34495e;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-ricefield-prop-map{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .p-rcf-prop{
+    width: 40%;
+  }
+  .p-rcf-map{
+    width: 60%;
+   }
+}
+.p-ricefield-progress-material{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.p-rcf-progress{
+  width: 80%;
+  text-align: left;
+  margin-bottom: 3%;
+}
+.p-rcf-material{
+  width: 80%;
+  text-align: left;
+  margin-bottom: 3%;
 }
 table.p-rcf-prgs__tbl{
   width: 100%;
@@ -152,20 +200,6 @@ table.p-rcf-prgs__tbl tr:nth-child(odd) {
 .p-rcf-prgs__th-result{
   width: 40%;
 }
-.p-ricefield-progress-material{
-  display: flex;
-  justify-content: space-between;
-  margin: 5%;
-  width: 100%;
-}
-.p-rcf-progress{
-  width: 50%;
-  text-align: left;
-}
-.p-rcf-material{
-  width: 40%;
-  text-align: left;
-}
 td.p-rcf-prgs__th-bar{
   height: 1px;
   width: 100%;
@@ -207,6 +241,20 @@ td.p-rcf-mtl__td-bar, th.p-rcf-mtl__td-bar{
 table.p-rcf-mtl__tbl tr:nth-child(odd) {
   background: #F9FAED;
   box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-ricefield-progress-material{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .p-rcf-progress{
+    width: 50%;
+  }
+  .p-rcf-material{
+    width: 40%;
+  }
 }
 /* Utility
    ----------------------------------------------------------------- */
