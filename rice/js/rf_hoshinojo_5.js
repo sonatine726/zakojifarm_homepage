@@ -3,7 +3,7 @@ if (typeof riceFields === "undefined") {
 }
 
 var hoshinojo_5_dict = { fieldId:"hoshinojo_5",
-                        fieldName:"星野城5",
+                        fieldName:"星5",
                         polCenter:{lat: 35.68035211752613, lng: 137.91741406996152},
                         polArray:[{lat: 35.68077914558905, lng: 137.9171941288223},
                                   {lat: 35.680796575208745, lng: 137.9176447399368},
@@ -25,7 +25,7 @@ $(function(){
     $('ul.p-ricefield-list').append(appendLi);
     hoshinojo_5_dict["linkLiDom"] = appendLi;
   }
-  
+
   if($("td.p-rfc-prop-block")[0]){
     $("td.p-rfc-prop-block").text(hoshinojo_5_dict.block);
   }

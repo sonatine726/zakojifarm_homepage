@@ -3,7 +3,7 @@ if (typeof riceFields === "undefined") {
 }
 
 var hoshinojo_3_dict = {fieldId:"hoshinojo_3", 
-                        fieldName:"星野城3", 
+                        fieldName:"星3", 
                         polCenter:{lat: 35.68152469371044, lng: 137.91770539542475},
                         polArray:[{lat: 35.68180683299479, lng: 137.91715899113115},
                                   {lat: 35.68181119034394, lng: 137.9174754917949},
