@@ -20,11 +20,12 @@ riceFields.push(hoshinojo_5_dict);
 
 $(function(){
   if($('ul.p-ricefield-list')[0]){
-    let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
+    const appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", hoshinojo_5_dict.url).text(hoshinojo_5_dict.fieldName));
     $('ul.p-ricefield-list').append(appendLi);
     hoshinojo_5_dict["linkLiDom"] = appendLi;
   }
+  
   if($("td.p-rfc-prop-block")[0]){
     $("td.p-rfc-prop-block").text(hoshinojo_5_dict.block);
   }
@@ -47,5 +48,3 @@ $(function(){
     $('ol.p-ricefield-individual_page').append(appendLi);
   }
 });
-
-address;

@@ -14,7 +14,11 @@ var hoshinojo_3_dict = {fieldId:"hoshinojo_3",
                                   {lat: 35.681118368838554, lng: 137.917222023043}
                         ],
                         url:"ricefields/rf_hoshinojo_3.html",
-                        zoom: 18}
+                        zoom: 18,
+                        block: "星野城",
+                        number: 3,
+                        address: "2834",
+                        area: 47};
 
 riceFields.push(hoshinojo_3_dict);
 
@@ -24,5 +28,27 @@ $(function(){
                             $("<a>").attr("href", hoshinojo_3_dict.url).text(hoshinojo_3_dict.fieldName));
     $('ul.p-ricefield-list').append(appendLi);
     hoshinojo_3_dict["linkLiDom"] = appendLi;
+  }
+
+  if($("td.p-rfc-prop-block")[0]){
+    $("td.p-rfc-prop-block").text(hoshinojo_3_dict.block);
+  }
+  if($("td.p-rfc-prop-number")[0]){
+    $("td.p-rfc-prop-number").text(hoshinojo_3_dict.number);
+  };
+  if($("td.p-rfc-prop-fieldName")[0]){
+    $("td.p-rfc-prop-fieldName").text(hoshinojo_3_dict.fieldName);
+  }
+  if($("td.p-rfc-prop-address")[0]){
+    $("td.p-rfc-prop-address").text(hoshinojo_3_dict.address);
+  }
+  if($("td.p-rfc-prop-area")[0]){
+    $("td.p-rfc-prop-area").text(hoshinojo_3_dict.area + "a");
+  }
+
+  if($('ol.p-ricefield-individual_page')[0]){
+    const appendLi = $("<li>").append(
+                            $("<a>").attr("href", hoshinojo_3_dict.url).text("圃場 「" + hoshinojo_3_dict.fieldName + "」"));
+    $('ol.p-ricefield-individual_page').append(appendLi);
   }
 });
