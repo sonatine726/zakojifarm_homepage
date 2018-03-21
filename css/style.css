@@ -162,6 +162,57 @@ a:link, a:visited, a:hover, a:active{
   color: #d9333f;
   text-decoration: none;
 }
+h1 {
+  text-align: left;
+  position: relative;
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h1::after {
+  content: "";
+  display: block;
+  height: 0.25rem;
+  background: -moz-linear-gradient(to right, rgb(255, 200, 0), transparent);
+  background: -webkit-linear-gradient(to right, rgb(255, 200, 0), transparent);
+  background: linear-gradient(to right, rgb(255, 200, 0), transparent);
+}
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 5rem;
+  text-align: left;
+  font-size: 1.2rem;
+  word-wrap:normal;
+  font-weight: 500;
+  border-bottom: solid 0.1rem rgba(255, 200, 0, 0.5);
+}
+h2::before{
+  background-image: url('../images/inaho_icon.png');
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -0.7rem;
+  left: -2.9rem;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  h2 {
+    font-size: 1.3rem;
+  }
+  h2::before{
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    top: -0.2rem;
+    left: -3rem;
+  }
+}
+
 
 
 /* ==========================================================================
@@ -248,7 +299,7 @@ a:link, a:visited, a:hover, a:active{
 @media screen and (min-width: 960px){
   .c-gnav-item{
     font-size: 1.2rem;
-     font-weight:1000;
+    font-weight:1000;
   }
   .c-gnav-item:first-of-type{
     font-size: 0.9rem;
@@ -608,6 +659,9 @@ a:link, a:visited, a:hover, a:active{
   content: "";
   display: block;
   clear: both;
+}
+.u-nowrap-phrase{
+  display: inline-block;
 }
 /**
  * Slick

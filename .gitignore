@@ -1,3 +1,5 @@
 /workspace/*
 !/workspace/WordPress/
 !/workspace/WordPress/*
+!/workspace/ImageWorkspace/
+!/workspace/\ImageWorkspace/*
