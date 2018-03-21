@@ -106,7 +106,7 @@ table.p-rcf-prop-tbl td{
   white-space: nowrap;
   overflow: hidden;
 }
-td.p-rcf-prop-tbl__bar{
+table.p-rcf-prop-tbl td.p-rcf-prop-tbl__bar{
   height: 1px;
   width: 100%;
   border-top: solid 1px #34495e;
