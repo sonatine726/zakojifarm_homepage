@@ -23,6 +23,10 @@
 .p-rice-spec-item{
   text-align: left;
 }
+.p-rice-spec-expl__h2::before
+{
+  top: 1rem;
+}
 .p-rice-spec-txt{
   font-size: 1rem;
   margin: 1rem 5rem;
@@ -66,6 +70,10 @@
 }
 /* Media for PC and Tablet */
 @media screen and (min-width: 960px){
+  .p-rice-spec-expl__h2::before
+  {
+    top: -0.7rem;
+  }
   .p-ricefield-list-map{
     flex-direction: row;
     justify-content: space-around;
