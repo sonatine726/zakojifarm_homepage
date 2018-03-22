@@ -20,10 +20,10 @@ const honan_2_dict = {fieldId:"honan_2",
 riceFields.push(honan_2_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", honan_2_dict.url).text(honan_2_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     honan_2_dict["linkLiDom"] = appendLi;
   }
 

@@ -20,10 +20,10 @@ const hanyu_3_dict = { fieldId:"hanyu_3",
 riceFields.push(hanyu_3_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", hanyu_3_dict.url).text(hanyu_3_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     hanyu_3_dict["linkLiDom"] = appendLi;
   }
 

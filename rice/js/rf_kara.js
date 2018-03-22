@@ -20,10 +20,10 @@ const kara_dict = { fieldId:"kara",
 riceFields.push(kara_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", kara_dict.url).text(kara_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     kara_dict["linkLiDom"] = appendLi;
   }
 

@@ -20,10 +20,10 @@ const tokeijoue_dict = { fieldId:"tokeijoue",
 riceFields.push(tokeijoue_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", tokeijoue_dict.url).text(tokeijoue_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     tokeijoue_dict["linkLiDom"] = appendLi;
   }
 

@@ -20,10 +20,10 @@ const kaga_3_dict = {fieldId:"kaga_3",
 riceFields.push(kaga_3_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", kaga_3_dict.url).text(kaga_3_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     kaga_3_dict["linkLiDom"] = appendLi;
   }
 

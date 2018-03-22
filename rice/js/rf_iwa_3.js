@@ -20,10 +20,10 @@ const iwa_3_dict = { fieldId:"iwa_3",
 riceFields.push(iwa_3_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", iwa_3_dict.url).text(iwa_3_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     iwa_3_dict["linkLiDom"] = appendLi;
   }
 

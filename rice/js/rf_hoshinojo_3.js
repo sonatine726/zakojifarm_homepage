@@ -23,10 +23,10 @@ var hoshinojo_3_dict = {fieldId:"hoshinojo_3",
 riceFields.push(hoshinojo_3_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", hoshinojo_3_dict.url).text(hoshinojo_3_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     hoshinojo_3_dict["linkLiDom"] = appendLi;
   }
 

@@ -21,10 +21,10 @@ const kou_2_dict = {fieldId:"kou_2",
 riceFields.push(kou_2_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
+  if($('ul.p-cropfield-list').length){
     let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
                             $("<a>").attr("href", kou_2_dict.url).text(kou_2_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     kou_2_dict["linkLiDom"] = appendLi;
   }
 

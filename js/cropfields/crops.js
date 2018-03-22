@@ -3,7 +3,7 @@ if (typeof riceFields === "undefined") {
 }
 
 $(window).on('load',function(){
-  const mapTargetId = "p-cropfield-map_canvas";
+  const mapTargetId = "p-ricefield-map_canvas";
   let centerPos;
   let zoom;
   if(riceFields.length == 1){

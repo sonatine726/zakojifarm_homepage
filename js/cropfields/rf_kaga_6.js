@@ -20,32 +20,32 @@ const kaga_6_dict = {fieldId:"kaga_6",
 riceFields.push(kaga_6_dict);
 
 $(function(){
-  if($('ul.p-ricefield-list').length){
-    let appendLi = $("<li>").attr("class", "p-rcf-list-item").append(
+  if($('ul.p-cropfield-list').length){
+    let appendLi = $("<li>").attr("class", "p-cf-list-item").append(
                             $("<a>").attr("href", kaga_6_dict.url).text(kaga_6_dict.fieldName));
-    $('ul.p-ricefield-list').append(appendLi);
+    $('ul.p-cropfield-list').append(appendLi);
     kaga_6_dict["linkLiDom"] = appendLi;
   }
 
-  if($("td.p-rfc-prop-block")[0]){
-    $("td.p-rfc-prop-block").text(kaga_6_dict.block);
+  if($("td.p-cf-prop-block")[0]){
+    $("td.p-cf-prop-block").text(kaga_6_dict.block);
   }
-  if($("td.p-rfc-prop-number")[0]){
-    $("td.p-rfc-prop-number").text(kaga_6_dict.number);
+  if($("td.p-cf-prop-number")[0]){
+    $("td.p-cf-prop-number").text(kaga_6_dict.number);
   };
-  if($("td.p-rfc-prop-fieldName")[0]){
-    $("td.p-rfc-prop-fieldName").text(kaga_6_dict.fieldName);
+  if($("td.p-cf-prop-fieldName")[0]){
+    $("td.p-cf-prop-fieldName").text(kaga_6_dict.fieldName);
   }
-  if($("td.p-rfc-prop-address")[0]){
-    $("td.p-rfc-prop-address").text(kaga_6_dict.address);
+  if($("td.p-cf-prop-address")[0]){
+    $("td.p-cf-prop-address").text(kaga_6_dict.address);
   }
-  if($("td.p-rfc-prop-area")[0]){
-    $("td.p-rfc-prop-area").text(kaga_6_dict.area + "a");
+  if($("td.p-cf-prop-area")[0]){
+    $("td.p-cf-prop-area").text(kaga_6_dict.area + "a");
   }
 
-  if($('ol.p-ricefield-individual_page')[0]){
+  if($('ol.p-cropfield-individual_page')[0]){
     const appendLi = $("<li>").append(
                             $("<a>").attr("href", kaga_6_dict.url).text("圃場 「" + kaga_6_dict.fieldName + "」"));
-    $('ol.p-ricefield-individual_page').append(appendLi);
+    $('ol.p-cropfield-individual_page').append(appendLi);
   }
 });
