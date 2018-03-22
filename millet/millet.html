@@ -14,6 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/crops.css">
   <link rel="stylesheet" type="text/css" href="css/millet.css">
   <title>お米の座光寺農園　雑穀</title>
   <meta content="お米の座光寺農園　雑穀" name="title">
@@ -105,8 +106,37 @@
     <ol>
   </header>
   <main id="main">
-    <section class="p-underconst">
-      <img src="images/underconst.gif" alt="工事中" class="p-underconst__img">
+    <section class="p-rice-spec">
+      <section class="p-rice-spec-item">
+        <h1>座光寺農園の雑穀の特徴</h1>
+        <article class="p-rice-spec-expl">
+          <h2 class="p-rice-spec-expl__h2">すべて有機・無農薬で栽培した雑穀</span></h2>
+          <div class="p-rice-spec-txt">
+            <p>
+              座光寺農園の雑穀は、すべて長野県南部の飯島町で栽培しています。
+              農薬を一切使用せず、有機肥料のみで栽培した有機無農薬の雑穀です。
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="p-millet-spec-image">
+        <ul class="p-millet-img-sld">
+          <li><img src="../images/millet/mimg_1.jpg" alt=""></li>
+          <li><img src="../images/millet/mimg_2.jpg" alt=""></li>
+          <li><img src="../images/millet/mimg_3.jpg" alt=""></li>
+          <li><img src="../images/millet/mimg_4.jpg" alt=""></li>
+        </ul>
+      </section>
+    </section>
+    <section class="p-ricefield-expl">
+      <h1>圃場一覧</h1>
+      <section class="p-ricefield-list-map">
+        <ul class="p-ricefield-list">
+        </ul>
+        <section class="p-ricefield-map">
+          <div id="p-ricefield-map_canvas"></div>
+        </section>
+      </section>
     </section>
   </main>
   <footer id="footer">
@@ -210,6 +240,10 @@
     <article id="copyright">© 2017 座光寺農園</article>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/cropfields/rf_hayashi_1.js"></script>
+  <script src="../js/cropfields/rice.js"></script>
+  <script src="js/millet.js"></script>
 </body>
 </html>

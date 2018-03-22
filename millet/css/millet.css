@@ -20,13 +20,16 @@
 
 /* Project
    ----------------------------------------------------------------- */
-.p-underconst{
-  width: 40%;
-  margin: 5% auto;
+.p-millet-spec-image{
+  margin:0.3% 2%;
 }
-.p-underconst__img{
-   width: 100%;
-   height: auto;
+.p-millet-img-sld{
+  width: 80%;
+  margin: 0 auto 0.3rem;
+}
+.p-millet-img-sld img{
+  max-width: 100%;
+  height: auto;
 }
 /* Utility
    ----------------------------------------------------------------- */
