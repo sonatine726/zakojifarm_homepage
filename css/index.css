@@ -20,38 +20,34 @@
 
 /* Project
    ----------------------------------------------------------------- */
-.p-millet-spec-image{
-  margin:0.3% 2%;
-}
-.p-millet-img-sld{
-  width: 80%;
-  margin: 0 auto 0.3rem;
-}
-.p-millet-img-sld img{
-  max-width: 100%;
-  height: auto;
-}
+
 /* Utility
    ----------------------------------------------------------------- */
 /**
  * Slick
  */
+.p-top-img-sld,.p-top-img-sld-thumb{
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+.p-top-img-sld.slick-initialized,.p-top-img-sld-thumb.slick-initialized{
+  opacity: 1;
+}
 /*左右の矢印の色を変える*/
 .slick-prev:before,
-.slick-next:before {
+.slick-next:before{
   color: #000;
 }
 /*左右の矢印の位置を変える*/
-.slick-next {
-  right: 20px;
+.slick-next{
+  right: 1%;
   z-index: 99;
 }
-.slick-prev {
-  left: 15px;
+.slick-prev{
+  left: 1%;
   z-index: 100;
 }
-/*スライド数のドットの色を変える*/
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-  color: #fff;
-}
+
+
+
+
