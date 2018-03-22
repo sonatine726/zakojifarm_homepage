@@ -31,6 +31,27 @@
   max-width: 100%;
   height: auto;
 }
+.p-millet-mowing-movie{
+  width: 80%;
+  border: 2px solid #eb6ea5;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+}
+.p-millet-mowing-movie::before {
+  background-color: #F9FAED;
+  color: #333;
+  content: "2017年度たかきび刈り取り風景";
+  left: 1em;
+  padding: 0 .5em;
+  position: absolute;
+  top: -1em;
+}
+.p-millet-mowing-video {
+  max-width: 100%;
+  height: auto;
+}
 /* Utility
    ----------------------------------------------------------------- */
 /**
