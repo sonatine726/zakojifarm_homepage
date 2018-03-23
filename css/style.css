@@ -146,7 +146,6 @@ html{
 	 font-size: 100%;
 	}
 }
-
 body{
   margin: 0 auto;
   color: #333;
@@ -165,9 +164,21 @@ a:link, a:visited, a:hover, a:active{
 h1 {
   text-align: left;
   position: relative;
-  margin: 1rem;
+  margin: 1rem 2rem 1rem 3.5rem;
   font-size: 1.5rem;
   font-weight: 500;
+}
+h1::before{
+  background-image: url('../images/inaho_icon.png');
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -0.7rem;
+  left: -3rem;
 }
 h1::after {
   content: "";
@@ -187,33 +198,19 @@ h2 {
   font-weight: 500;
   border-bottom: solid 0.1rem rgba(255, 200, 0, 0.5);
 }
-h2::before{
-  background-image: url('../images/inaho_icon.png');
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-size: 25px 25px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -0.7rem;
-  left: -2.9rem;
-}
 /* Media for PC and Tablet */
 @media screen and (min-width: 960px){
   h2 {
     font-size: 1.3rem;
   }
-  h2::before{
-    width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
-    top: -0.2rem;
-    left: -3rem;
+  h1::before{
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    top: -0.7rem;
+    left: -3.5rem;
   }
 }
-
-
 
 /* ==========================================================================
    Layout
@@ -675,4 +672,15 @@ h2::before{
   background: -webkit-gradient(radial, center center, 0, center center, 400, from(rgba(255, 255, 255, 0)), to(rgba(255,255,255, 0.5)));
   background: -moz-radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.5) 150%);
   background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255,255,255,0.5) 150%);
+}
+.u-p-firstletter-zoom p:first-letter{
+  font-size: 1.5rem;
+  color:#FFC800;
+}
+.u-firstletter-zoom:first-letter{
+  font-size: 1.5rem;
+  color:#FFC800;
+}
+.u-firstletter-accentcolor:first-letter{
+  color: #eb6ea5;
 }
