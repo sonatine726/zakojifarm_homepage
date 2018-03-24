@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* This css is based on FLOCSS. */
+/* This css contains only difference from style.css. So this should be linked after link of style.css. */
+
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+body{
+  max-width: 100vw;
+}   
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* ==========================================================================
+   Object
+   ========================================================================== */
+
+/* Component
+   ----------------------------------------------------------------- */
+
+/* Project
+   ----------------------------------------------------------------- */
+.p-new-blodlist-art{
+  position: relative;
+  margin: 3rem 0;
+  padding: 0.5rem 1rem;
+  border: solid 3px #ffc800;
+  width: 100%;
+}
+.p-new-blodlist-title{
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -3px;
+  padding: 0 9px;
+  line-height: 25px;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  background: #ffc800;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.p-new-blodlist-art ul{
+  font-size: 1.3rem;
+  list-style-type: circle;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 1rem;
+}
+.p-new-blodlist-thumbnail{
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  float: right;
+}
+.p-new-blodlist-thumbnail img{
+  width: 100%;
+  height: auto;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 480px){
+  .p-new-blodlist-thumbnail{
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Utility
+   ----------------------------------------------------------------- */
+
