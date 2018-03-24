@@ -502,45 +502,6 @@ h2 {
     display: none;
   }
 }
-.p-top-imgs{
-  margin:0.3% 2%;
-}
-.p-top-imgs img{
-  max-width: 100%;
-  height: auto;
-}
-.p-top-img-sld{
-  max-width: 100%;
-  margin: 0 auto 0.3rem;
-  padding: 0 0.5%;
-}
-.p-top-img-sld-thumb{
-  max-width: 100%;
-  margin: 0 auto;
-}
-.p-top-img-sld-thumb li{
-  margin: 0.1%;
-}
-.p-main-art{
-  margin: 1rem auto;
-  min-width: 320px;
-  padding: 0 2%;
-}
-.p-main-art-img > img{
-  width: 100%;  
-  height:auto;
-}
-.p-main-art-txt{
-  text-align: left;
-}
-/* Media for PC and Tablet */
-@media screen and (min-width: 960px){
-.p-sns-plugins{
-  width: 100%;
-  display: flex;
-  justify-content:space-between;
-}
-}
 .p-farmer-expl{
   position: relative;
   border-top: solid 1px #FFC800;
