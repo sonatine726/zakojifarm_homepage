@@ -61,7 +61,7 @@ body{
   height: auto;
 }
 /* Media for PC and Tablet */
-@media screen and (min-width: 480px){
+@media screen and (min-width: 400px){
   .p-new-blodlist-thumbnail{
     width: 100px;
     height: 100px;
