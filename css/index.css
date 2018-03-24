@@ -20,7 +20,77 @@
 
 /* Project
    ----------------------------------------------------------------- */
-
+.p-top-imgs{
+  margin:0.3% 2%;
+}
+.p-top-imgs img{
+  max-width: 100%;
+  height: auto;
+}
+.p-top-img-sld{
+  max-width: 100%;
+  margin: 0 auto 0.3rem;
+  padding: 0 0.5%;
+}
+.p-top-img-sld-thumb{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.p-top-img-sld-thumb li{
+  margin: 0.1%;
+}
+.p-main-art{
+  margin: 1rem auto;
+  min-width: 320px;
+  padding: 0 2%;
+}
+.p-main-art-img > img{
+  width: 100%;  
+  height:auto;
+}
+.p-main-art-txt{
+  text-align: left;
+}
+.p-top-plugins{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.p-top-plugins-newblog{
+  width: 100%;
+}
+.p-wp-newblog-plgin{
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+.p-top-plugin-fb{
+  width: 100%;
+  padding: 1rem;
+}
+.p-tweet-plugin{
+  width: 100%;
+  padding: 1rem;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-top-plugins{
+    flex-direction: row;
+  }
+  .p-top-plugins-newblog{
+    width: 55%;
+  }
+  .p-top-plugin-fb{
+    width: 28%;
+    padding: 0;
+  }
+  .p-tweet-plugin{
+    width: 15%;
+    padding: 0;
+  }
+}
 /* Utility
    ----------------------------------------------------------------- */
 /**
