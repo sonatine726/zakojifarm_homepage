@@ -30,10 +30,6 @@
   font-size: 1rem;
   margin: 1rem 5rem;
 }
-.p-crop-spec-txt p:first-letter{
-  font-size: 1.5rem;
-  color:#FFC800;
-}
 .p-crop-spec-iijima-image{
   display: inline-block;
   margin: 1rem auto;
