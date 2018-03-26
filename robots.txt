@@ -1,0 +1,6 @@
+User-agent : *
+Disallow :
+Sitemap : https://zakojifarm.jp/sitemap.xml
+Sitemap : https://zakojifarm.jp/blogs/sitemap.xml
+
+
