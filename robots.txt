@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /blogs/wp-admin/
+Allow: /blogs/admin-ajax.php
+Sitemap: https://zakojifarm.jp/sitemap.xml
+Sitemap: https://zakojifarm.jp/blogs/sitemap.xml
