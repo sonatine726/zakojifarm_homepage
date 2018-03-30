@@ -2,5 +2,7 @@
 !/workspace/WordPress/
 !/workspace/WordPress/*
 !/workspace/ImageWorkspace/
-!/workspace/\ImageWorkspace/*
+!/workspace/ImageWorkspace/*
+!/workspace/DevelopmentEnvironment/
+!/workspace/DevelopmentEnvironment/*
 /millet/images/mmovie.mp4
