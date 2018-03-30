@@ -507,13 +507,15 @@ h2 {
   border-top: solid 1px #FFC800;
   border-bottom: solid 1px #FFC800;
   padding: 1rem 0;
+  width: 95%;
+  margin: 0 auto;
 }
-.p-farmer-expl:before, .p-farmer-expl:after{
+.p-farmer-expl::before, .p-farmer-expl::after{
   content: '';
   position: absolute;
-  top: -4%;
+  top: -1%;
   width: 1px;
-  height: 108%;
+  height: 102%;
   background-color: #FFC800;
 }
 .p-farmer-expl:before {left: 1%;}
@@ -525,20 +527,23 @@ h2 {
 }
 .p-farmer-expl-img{
   width: 80%;
-  margin: 0 auto;
-  display: flex;
 }
-.p-farmer-expl-sns-logo img{
+.p-farmer-expl-logo img{
   width: 100%;
   height:auto;
+}
+.p-farmer-expl-img-wrapper{
+  display: flex;
+  align-items: center;
 }
 .p-farmer-expl-sns-icons{
   width: 30%;
 }
 .p-farmer-expl-box{
   font-size: 0;
-  width: 95%;
-  margin:0 auto;
+  width: 90%;
+  margin: 0 auto;
+  padding:0 auto;
 }
 .p-farmer-expl-txt{
   font-size: 1.5rem;
@@ -549,11 +554,11 @@ h2 {
   margin-bottom: 20px;
 }
 .p-farmer-exple-title{
-  width: 25%;
+  width: 30%;
   display: table-cell;
 }
 .p-farmer-exple-value{
-  width: 75%;
+  width: 70%;
   display: table-cell;
 }
 .p-sns-addr{
@@ -564,14 +569,6 @@ h2 {
 }
 .p-farmer-expl-addr{
   font-size: 1.4rem;
-}
-.p-farmer-expl-map{
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 3%;
-}
-.p-farmer-expl-map iframe{
-  width: 100%;
 }
 .p-farmer-expl-sns-icons{
   margin-left:0.6rem;
@@ -584,30 +581,34 @@ h2 {
   .p-sns-addr{
     font-size: 0.9rem;
   }
+  .p-sns-addr{
+    word-break: normal;
+  }
   .p-farmer-expl-txt li{
     margin-bottom: 10px;
   }
   .p-farmer-expl-wrapper{
     flex-direction: row;
+    justify-content: space-around;
   }
   .p-farmer-expl-img{
-    width: 20%;
+    width: 30%;
     vertical-align: top;
-    margin: 0.5rem;
-    display: flex;
+  }
+  .p-farmer-expl-img-wrapper{
     flex-direction: column;
+    align-items: center;
   }
   .p-farmer-expl-box{
-    width: 40%;
-    vertical-align: top;
-  }
-  .p-farmer-expl-map{
-    width: 40%;
-    padding-right: 2%;
-    margin-top: 0;
+    width: 58%;
+    margin: 0;
   }
   .p-farmer-expl-sns-icons{
-    width: 95%;
+    width: 80%;
+  }
+  .p-farmer-expl::before, .p-farmer-expl::after{
+    top: -4%;
+    height: 108%;
   }
 }
 
