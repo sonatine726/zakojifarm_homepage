@@ -47,7 +47,7 @@ $Email = "メールアドレス";
 ------------------------------------------------------------------------------------------------*/
 
 //スパム防止のためのリファラチェック（フォームページが同一ドメインであるかどうかのチェック）(する=1, しない=0)
-$Referer_check = 1;
+$Referer_check = 0;
 
 //リファラチェックを「する」場合のドメイン ※以下例を参考に設置するサイトのドメインを指定して下さい。
 $Referer_check_domain = "zakojifarm.jp";
@@ -130,7 +130,7 @@ $mailSignature = <<< FOOTER
 住所: 〒399-3702 長野県上伊那郡飯島町飯島2091-2
 TEL： 090-9359-6196 　
 Mail: zakojifarm@zakojifarm.jp
-URL: https://zakojifarm.jp/
+URL:  https://zakojifarm.jp/
 ────────────────────────────────────────────
 
 FOOTER;
@@ -235,6 +235,22 @@ else if($confirmDsp == 1){
     width: 70%;
   }
 }
+.p-confirm-sct__dev h1{
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+.p-confirm-sct__dev h1::before,
+.p-confirm-sct__dev h1::after{
+  content: none;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-confirm-sct__dev h1{
+    font-size: 2rem;
+  }
+}
 .p-confirm-table{
   margin: 1% auto;
   font-size: 1.05rem;
@@ -323,7 +339,13 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 }
 .p-thanks-sct h1{
   font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0;
   background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+.p-thanks-sct h1::before,
+.p-thanks-sct h1::after{
+  content: none;
 }
 /* Media for PC and Tablet */
 @media screen and (min-width: 960px){
@@ -339,7 +361,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
   <h1>お問い合わせ、ありがとうございました。</h1>
   <p class="p-thanks-txt">送信は正常に完了しました。</p>
 </section>
-<a href="https://zakojifarm.jp/">ホームへ戻る&raquo;</a>
+<a href="/">ホームへ戻る&raquo;</a>
 <?php include('./footer.php'); ?>
 <?php 
 /* ▲▲▲送信完了画面のレイアウト 編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲　*/
