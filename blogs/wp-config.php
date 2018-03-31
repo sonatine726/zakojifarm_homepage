@@ -29,13 +29,13 @@
 define('DB_NAME', 'LAA0929252-wpzakojifarm');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'LAA0929252');
+define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '2VO06imZVNxRuEJs');
+define('DB_PASSWORD', 'password');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql130.phy.lolipop.lan');
+define('DB_HOST', 'db');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8mb4');
