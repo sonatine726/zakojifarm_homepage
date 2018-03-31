@@ -1,40 +1,82 @@
-if (typeof riceFields === "undefined") {
-  var riceFields = [];
-}
+(function($){
+  (function() {
+    "use strict";
+    var ZAKOJIFARM_GLOBAL = ZAKOJIFARMAPP.namespace("global");
+    var ZAKOJIFARM_MILLLET = ZAKOJIFARMAPP.namespace("millet");
 
-$(window).on('load',function(){
-  const mapTargetId = "p-cropfield-map_canvas";
-  let centerPos;
-  let zoom;
-  if(riceFields.length == 1){
-    centerPos = riceFields[0].polCenter;
-    zoom = riceFields[0].zoom;
-  }
-  else{
-    centerPos = {lat:35.68177567810094, lng:137.91623926175816};
-    zoom = 17;
-  }
-  viewGMap(mapTargetId, centerPos, zoom, riceFields);
-});
+    const mapTargetId = "p-cropfield-map_canvas";
+    let centerPos = {lat:35.68177567810094, lng:137.91623926175816};
+    let zoom = 17;
+
+    ZAKOJIFARM_MILLLET.milletMap = ZAKOJIFARM_GLOBAL.viewGMap(mapTargetId, centerPos, zoom);
+
+    ZAKOJIFARM_MILLLET.milletFields = {};
+
+    ZAKOJIFARM_MILLLET.viewRiceMilletFieldInfoToMilletPage = function(fieldObj){
+      ZAKOJIFARM_GLOBAL.viewCropFieldInfoToCropPage(ZAKOJIFARM_MILLLET.milletMap, fieldObj);
+      ZAKOJIFARM_MILLLET.milletFields[fieldObj.id] = fieldObj;
+    };
+
+    $('.p-millet-img-sld').slick({
+      infinite: true,
+      dots:true,
+      slidesToShow: 1,
+      centerMode: true, //要素を中央寄せ
+      centerPadding:'30px', //両サイドの見えている部分のサイズ
+      autoplay:true, //自動再生
+      autoplaySpeed: 3000,
+      speed: 1500,
+      responsive: [{
+        breakpoint: 480,
+          settings: {
+            centerMode: false,
+          }
+      }]
+    });
+  }());
+})(jQuery);
 $(window).on('unload',function(){
   GUnload();
 });
 
-$(function() {
-  $('.p-millet-img-sld').slick({
-    infinite: true,
-    dots:true,
-    slidesToShow: 1,
-    centerMode: true, //要素を中央寄せ
-    centerPadding:'30px', //両サイドの見えている部分のサイズ
-    autoplay:true, //自動再生
-    autoplaySpeed: 3000,
-    speed: 1500,
-    responsive: [{
-      breakpoint: 480,
-        settings: {
-          centerMode: false,
-        }
-    }]
-  });
-});
+
+// if (typeof riceFields === "undefined") {
+//   var riceFields = [];
+// }
+
+// $(window).on('load',function(){
+//   const mapTargetId = "p-cropfield-map_canvas";
+//   let centerPos;
+//   let zoom;
+//   if(riceFields.length == 1){
+//     centerPos = riceFields[0].polCenter;
+//     zoom = riceFields[0].zoom;
+//   }
+//   else{
+//     centerPos = {lat:35.68177567810094, lng:137.91623926175816};
+//     zoom = 17;
+//   }
+//   viewGMap(mapTargetId, centerPos, zoom, riceFields);
+// });
+// $(window).on('unload',function(){
+//   GUnload();
+// });
+
+// $(function() {
+//   $('.p-millet-img-sld').slick({
+//     infinite: true,
+//     dots:true,
+//     slidesToShow: 1,
+//     centerMode: true, //要素を中央寄せ
+//     centerPadding:'30px', //両サイドの見えている部分のサイズ
+//     autoplay:true, //自動再生
+//     autoplaySpeed: 3000,
+//     speed: 1500,
+//     responsive: [{
+//       breakpoint: 480,
+//         settings: {
+//           centerMode: false,
+//         }
+//     }]
+//   });
+// });
