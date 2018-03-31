@@ -80,7 +80,7 @@
 
     if($('ol.p-cropfield-individual_page')[0]){
       const appendLi = $("<li>").append(
-                              $("<a>").attr("href", fieldObj.url).text("圃場 「" + fieldObj.fieldName + "」"));
+                              $("<a>").attr("href", fieldObj.url).text("圃場 「" + fieldObj.name + "」"));
       $('ol.p-cropfield-individual_page').append(appendLi);
     }
 
