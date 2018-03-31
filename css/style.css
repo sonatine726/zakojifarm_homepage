@@ -502,6 +502,14 @@ h2 {
     display: none;
   }
 }
+.p-gnav-intro{
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 960px){
+  .p-gnav-intro{
+    font-size: 0.9rem;
+  }
+}
 .p-farmer-expl{
   position: relative;
   border-top: solid 1px #FFC800;
@@ -524,6 +532,7 @@ h2 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .p-farmer-expl-img{
   width: 80%;
@@ -546,7 +555,7 @@ h2 {
   padding:0 auto;
 }
 .p-farmer-expl-txt{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 .p-farmer-expl-txt li{
