@@ -1,5 +1,6 @@
 (function($){
-  $(function(){
+  "use strict";
+  $(window).on('load', function() {
     //Slide show by slick.js.
     $('.p-top-img-sld').slick({
       infinite: true,
@@ -7,7 +8,10 @@
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      asNavFor: '.p-top-img-sld-thumb'
+      asNavFor: '.p-top-img-sld-thumb',
+      autoplay:true,
+      autoplaySpeed: 4000,
+      speed: 3000
     });
     $('.p-top-img-sld-thumb').slick({
       infinite: true,
