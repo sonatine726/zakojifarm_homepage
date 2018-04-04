@@ -398,15 +398,16 @@ h2 {
   width: 100%;
 }
 .p-iijima-string{
+  font-size: 1.0rem;
   text-align: center;
-  font-size: 1rem;
   font-family :YuMincho,'Yu Mincho',serif;
+  white-space: nowrap;
 }
 /* Media for PC and Tablet*/
 @media screen and (min-width: 960px){
-.p-iijima-string{
-  font-size: 1.5rem;
-}
+  .p-iijima-string{
+    font-size: 1.5rem;
+  }
 }
 .p-sns-icons{
   display: inline-block;
