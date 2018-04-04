@@ -298,9 +298,6 @@ h2 {
     font-size: 1.2rem;
     font-weight:1000;
   }
-  .c-gnav-item:first-of-type{
-    font-size: 0.9rem;
-  }
 }
 .c-gnav-item > a{
   width:100%;
@@ -508,7 +505,7 @@ h2 {
 }
 @media screen and (min-width: 960px){
   .p-gnav-intro{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 .p-farmer-expl{
