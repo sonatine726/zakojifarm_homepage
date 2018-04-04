@@ -10,8 +10,8 @@
       fade: true,
       asNavFor: '.p-top-img-sld-thumb',
       autoplay:true,
-      autoplaySpeed: 3000,
-      speed: 1500
+      autoplaySpeed: 4000,
+      speed: 3000
     });
     $('.p-top-img-sld-thumb').slick({
       infinite: true,
