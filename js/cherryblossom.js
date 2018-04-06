@@ -4,34 +4,13 @@
       var q = d.createElement('div');
       q.id = "sakura";
 
-      var h = w.innerHeight;
-      var u = d.documentElement.scrollTop || b.scrollTop;
-      var z = 9999;
-      var t = new Array();
-      var l = new Array();
-      var y = new Array();
-      var s = new Array();
-      var g = new Array();
-      var c = new Array();
-      var k = 0;
       let petalCount;
       let fallIntervalMsec = 60;
       if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        petalCount = 15;
-      } else {
         petalCount = 50;
-        d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
+      } else {
+        petalCount = 90;
       }
-      d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
-
-      for(var i=0;i<petalCount;i++){
-        t[i] = Math.random()*-1000+u;
-        l[i] = Math.random()*w.innerWidth;
-        y[i] = Math.random()*40+5;
-        s[i] = Math.random()*5+2;
-        c[i] = 0;
-      }
-
       const petal_horizontal_shake_length = (Math.random() - 0.5) * 50;
 
       let htmlCode = '<style>'+
@@ -70,11 +49,11 @@
 
       htmlCode = htmlCode +
         '.y1{-webkit-animation:v1 10s infinite;animation:v1 10s infinite;}'+
-        '.y2{-webkit-animation:v2 10s infinite;animation:v2 10s infinite;}'+
+        '.y2{-webkit-animation:v2 10s ease-in-out infinite;animation:v2 10s ease-in-out infinite;}'+
         '.y3{-webkit-animation:v3 9s infinite;animation:v3 9s infinite;}'+
-        '.y4{-webkit-animation:v4 9s infinite;animation:v4 9s infinite;}'+
+        '.y4{-webkit-animation:v4 9s ease-in-out infinite;animation:v4 9s ease-in-out infinite;}'+
         '.y5{-webkit-animation:v5 8s infinite;animation:v5 8s infinite;}'+
-        '.y6{-webkit-animation:v6 8s infinite;animation:v6 8s infinite;}'+
+        '.y6{-webkit-animation:v6 8s ease-in-out infinite;animation:v6 8s ease-in-out infinite;}'+
         '@-webkit-keyframes v1{'+
           'from{-webkit-transform: rotate(0deg) scale(1);}'+
           '50%{-webkit-transform: rotate(270deg) scale(1);}'+
@@ -162,9 +141,10 @@
       q.innerHTML += htmlCode;
       b.appendChild(q);
 
+      const z = 9999;
       for(var i=0;i<petalCount;i++){
         let m_wrapper = d.createElement('div');
-        m_wrapper.setAttribute('style','z-index:'+(z+i)+';top:'+t[i]+'px;left:'+l[i]+'px;');
+        m_wrapper.setAttribute('style','z-index:'+(z+i)+';top:'+(Math.random()*-500)+'px;left:'+(Math.random()*w.innerWidth)+'px;');
         let wrapper_class = 'hana_wrapper fall_' + (Math.floor(Math.random()*6)+1);
         m_wrapper.setAttribute('class', wrapper_class);
 
@@ -180,61 +160,7 @@
         m_wrapper_2.appendChild(m);
         m_wrapper.appendChild(m_wrapper_2);
         q.appendChild(m_wrapper);
-        g[i] = m;
       }
-
-      function fallPetalsToNextPosition(){
-        for(var i=0;i<petalCount;i++){
-          if(t[i]<u+h-40){
-            if(y[i]>=c[i]){
-              l[i] = l[i]+0.5+Math.random()*0.5;
-            }else{
-              l[i] = l[i]-0.5-Math.random()*0.5;
-            }
-            if((y[i]*2)<=c[i]){
-              c[i] = 0;
-            }
-          }else{
-            t[i] = u-40;
-            l[i] = Math.random()*w.innerWidth;
-          }
-          if(k>=100 && k<=110){l[i] = l[i]+1;}
-          else if(k>=111 && k<=120){l[i] = l[i]+3;}
-          else if(k>=121 && k<=129){l[i] = l[i]+5;}
-          else if(k>=130 && k<=137){l[i] = l[i]+7;}
-          else if(k>=138 && k<=144){l[i] = l[i]+9;}
-          else if(k>=145 && k<=300){l[i] = l[i]+11;}
-          else if(k>=301 && k<=311){l[i] = l[i]+9;}
-          else if(k>=312 && k<=322){l[i] = l[i]+7;}
-          else if(k>=323 && k<=335){l[i] = l[i]+5;}
-          else if(k>=336 && k<=349){l[i] = l[i]+3;}
-          else if(k>=350 && k<=354){l[i] = l[i]+1;}
-
-          else if(k>=500 && k<=510){l[i] = l[i]-1;}
-          else if(k>=511 && k<=520){l[i] = l[i]-3;}
-          else if(k>=521 && k<=529){l[i] = l[i]-5;}
-          else if(k>=530 && k<=537){l[i] = l[i]-7;}
-          else if(k>=538 && k<=544){l[i] = l[i]-9;}
-          else if(k>=545 && k<=700){l[i] = l[i]-11;}
-          else if(k>=701 && k<=711){l[i] = l[i]-9;}
-          else if(k>=712 && k<=722){l[i] = l[i]-7;}
-          else if(k>=723 && k<=735){l[i] = l[i]-5;}
-          else if(k>=736 && k<=749){l[i] = l[i]-3;}
-          else if(k>=750 && k<=754){l[i] = l[i]-1;}
-
-          else if(k>=900){k = 0;}
-
-          t[i] = t[i]+s[i];
-          g[i].style.top = t[i]+'px';
-          g[i].style.left = l[i]+'px';
-          c[i]++;
-        }
-        k++;
-        /* console.log(k); */
-      }
-
-      // setInterval(fallPetalsToNextPosition,fallIntervalMsec)();;
-      // fallPetalsToNextPosition();
     })(window.document,window.document.body,window);
   });
 })(jQuery);
