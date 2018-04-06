@@ -118,13 +118,14 @@
       var g = new Array();
       var c = new Array();
       var k = 0;
-      d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
       let petalCount;
       let fallIntervalMsec = 60;
       if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
         petalCount = 15;
+        d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;fallPetalsToNextPosition();},false);
       } else {
         petalCount = 50;
+        d.addEventListener('scroll',function(){u = d.documentElement.scrollTop || b.scrollTop;},false);
       }
       for(var i=0;i<petalCount;i++){
         var m = d.createElement('div');
