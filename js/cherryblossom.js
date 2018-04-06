@@ -32,6 +32,8 @@
         c[i] = 0;
       }
 
+      const petal_horizontal_shake_length = (Math.random() - 0.5) * 50;
+
       let htmlCode = '<style>'+
       'html,body{overflow-x:hidden;}'+
       '.hana{'+
@@ -143,6 +145,16 @@
           'from {transform: translateY(0px);opacity: 1;}'+
           '90% {opacity: 1;}'+
           `to {transform: translateY(${window.document.documentElement.scrollHeight}px); opacity: 0;} ` +
+        '}'+
+        '.horizontalshake_1{-webkit-animation:kf_petalHorizontalShake 1s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 1s ease-in-out infinite alternate;}'+
+        '.horizontalshake_2{-webkit-animation:kf_petalHorizontalShake 1.5s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 1.5s ease-in-out infinite alternate;}'+
+        '.horizontalshake_3{-webkit-animation:kf_petalHorizontalShake 2s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 2s ease-in-out infinite alternate;}'+
+        '.horizontalshake_4{-webkit-animation:kf_petalHorizontalShake 2.5s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 2.5s ease-in-out infinite alternate;}'+
+        '.horizontalshake_5{-webkit-animation:kf_petalHorizontalShake 3s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 3s ease-in-out infinite alternate;}'+
+        '.horizontalshake_6{-webkit-animation:kf_petalHorizontalShake 3.5s ease-in-out-in-out infinite alternate; animation:kf_petalHorizontalShake 3.5s ease-in-out infinite alternate;}'+
+        '@keyframes kf_petalHorizontalShake {'+
+          `from {transform: translateX(-${petal_horizontal_shake_length}px);}` +
+          `to {transform: translateX(${petal_horizontal_shake_length}px);}` +
         '};';
 
       htmlCode += '</style>';
@@ -155,12 +167,18 @@
         m_wrapper.setAttribute('style','z-index:'+(z+i)+';top:'+t[i]+'px;left:'+l[i]+'px;');
         let wrapper_class = 'hana_wrapper fall_' + (Math.floor(Math.random()*6)+1);
         m_wrapper.setAttribute('class', wrapper_class);
+
+        let m_wrapper_2 = d.createElement('div');
+        let wrapper_class_2 = 'hana_wrapper horizontalshake_' + (Math.floor(Math.random()*6)+1);
+        m_wrapper_2.setAttribute('class', wrapper_class_2);
+
         var m = d.createElement('div');
         m.id = 'hanabira'+i;
         var clss = 'hana t'+(Math.floor(Math.random()*6)+1)+' y'+(Math.floor(Math.random()*6)+1);
         m.setAttribute('class',clss);
 
-        m_wrapper.appendChild(m);
+        m_wrapper_2.appendChild(m);
+        m_wrapper.appendChild(m_wrapper_2);
         q.appendChild(m_wrapper);
         g[i] = m;
       }
