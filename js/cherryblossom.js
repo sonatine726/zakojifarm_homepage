@@ -12,6 +12,10 @@
         petalCount = 90;
       }
       const petal_horizontal_shake_length = (Math.random() - 0.5) * 50;
+      let fall_length = window.document.documentElement.scrollHeight;
+      if(fall_length > 3000){
+        fall_length = 3000;
+      }
 
       let htmlCode = '<style>'+
       'html,body{overflow-x:hidden;}'+
@@ -123,7 +127,7 @@
         '@keyframes kf_petalFall {'+
           'from {transform: translateY(0px);opacity: 1;}'+
           '90% {opacity: 1;}'+
-          `to {transform: translateY(${window.document.documentElement.scrollHeight}px); opacity: 0;} ` +
+          `to {transform: translateY(${fall_length}px); opacity: 0;} ` +
         '}'+
         '.horizontalshake_1{-webkit-animation:kf_petalHorizontalShake 1s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 1s ease-in-out infinite alternate;}'+
         '.horizontalshake_2{-webkit-animation:kf_petalHorizontalShake 1.5s ease-in-out infinite alternate; animation:kf_petalHorizontalShake 1.5s ease-in-out infinite alternate;}'+
