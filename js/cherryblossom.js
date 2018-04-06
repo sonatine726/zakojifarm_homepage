@@ -133,35 +133,16 @@
           '50%{transform: rotate(-420deg) scale(.5);}'+
           'to{transform: rotate(-149deg) scale(.5);}'+
         '}'+
-        '.fall_1{-webkit-animation:kf_petalFall_1 30s infinite;animation:kf_petalFall_1 30s infinite;}'+
-        '.fall_2{-webkit-animation:kf_petalFall_2 30s infinite;animation:kf_petalFall_2 30s infinite;}'+
-        '.fall_3{-webkit-animation:kf_petalFall_3 30s infinite;animation:kf_petalFall_3 30s infinite;}'+
-        '.fall_4{-webkit-animation:kf_petalFall_4 30s infinite;animation:kf_petalFall_4 30s infinite;}'+
-        '.fall_5{-webkit-animation:kf_petalFall_5 30s infinite;animation:kf_petalFall_5 30s infinite;}'+
-        '.fall_6{-webkit-animation:kf_petalFall_6 30s infinite;animation:kf_petalFall_6 30s infinite;}'+
-        '@keyframes kf_petalFall_1 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[0]*1000}px);} ` +
-        '};' +
-        '@keyframes kf_petalFall_2 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[1]*1000}px);} ` +
-        '};' +
-        '@keyframes kf_petalFall_3 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[2]*1000}px);} ` +
-        '};'+
-        '@keyframes kf_petalFall_4 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[3]*1000}px);} ` +
-        '};'+
-        '@keyframes kf_petalFall_5 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[4]*1000}px);} ` +
-        '};'+
-        '@keyframes kf_petalFall_6 {'+
-        'from {transform: translateY(0px);}'+
-        `to {transform: translateY(${s[5]*1000}px);} ` +
+        '.fall_1{-webkit-animation:kf_petalFall 20s linear infinite;animation:kf_petalFall 20s linear infinite;}'+
+        '.fall_2{-webkit-animation:kf_petalFall 25s linear infinite;animation:kf_petalFall 25s linear infinite;}'+
+        '.fall_3{-webkit-animation:kf_petalFall 30s linear infinite;animation:kf_petalFall 30s linear infinite;}'+
+        '.fall_4{-webkit-animation:kf_petalFall 35s linear infinite;animation:kf_petalFall 35s linear infinite;}'+
+        '.fall_5{-webkit-animation:kf_petalFall 40s linear infinite;animation:kf_petalFall 40s linear infinite;}'+
+        '.fall_6{-webkit-animation:kf_petalFall 50s linear infinite;animation:kf_petalFall 50s linear infinite;}'+
+        '@keyframes kf_petalFall {'+
+          'from {transform: translateY(0px);opacity: 1;}'+
+          '90% {opacity: 1;}'+
+          `to {transform: translateY(${window.document.documentElement.scrollHeight}px); opacity: 0;} ` +
         '};';
 
       htmlCode += '</style>';
