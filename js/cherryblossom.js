@@ -7,14 +7,14 @@
       let petalCount;
       let fallIntervalMsec = 60;
       if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        petalCount = 50;
+        petalCount = 90;
       } else {
         petalCount = 90;
       }
       const petal_horizontal_shake_length = (Math.random() - 0.5) * 50;
       let fall_length = window.document.documentElement.scrollHeight;
-      if(fall_length > 3000){
-        fall_length = 3000;
+      if(fall_length > 2500){
+        fall_length = 2500;
       }
 
       let htmlCode = '<style>'+
