@@ -7,3 +7,6 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
+
+php_flag session.cookie_secure On
+php_flag session.cookie_httponly On
