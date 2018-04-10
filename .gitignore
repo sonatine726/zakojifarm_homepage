@@ -5,4 +5,6 @@
 !/workspace/ImageWorkspace/*
 !/workspace/DevelopmentEnvironment/
 !/workspace/DevelopmentEnvironment/*
+!/workspace/ServerConfigs/
+!/workspace/ServerConfigs/*
 /millet/images/mmovie.mp4

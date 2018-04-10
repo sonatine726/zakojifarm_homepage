@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* This css is based on FLOCSS. */
+/* This css contains only difference from style.css. So this should be linked after link of style.css. */
+
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* ==========================================================================
+   Object
+   ========================================================================== */
+
+/* Component
+   ----------------------------------------------------------------- */
+
+/* Project
+   ----------------------------------------------------------------- */
+.p-err-title{
+  margin-top: 5%;
+}
+.p-err-subtitle{
+  display: block;
+  text-align: left;
+}
+.p-err-expl{
+  margin: 5% 2% 2% 10%;
+  text-align: left;
+}
+.p-err-img{
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+}
+.p-err-img > img{
+  width: 100%;
+  height: auto;
+}
+/* Media for PC and Tablet */
+@media screen and (min-width: 960px){
+  .p-err-img{
+    width: 300px;
+  }
+}
+
+/* Utility
+   ----------------------------------------------------------------- */
