@@ -4,6 +4,8 @@ Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; prelo
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://zakojifarm.jp%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
