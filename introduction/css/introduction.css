@@ -52,8 +52,37 @@
     height: 600px;
   }
 }
-.p-intro-movie{
-  margin:10%;
+.p-intro-principle-vision{
+  margin-bottom: 3rem;
+}
+.p-intro-principle-vision h2{
+  margin-left: 0;
+}
+.p-intro-p-txt{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+ul.p-intro-v-txt{
+  margin-top: 1rem;
+  margin-left: 2rem;  
+}
+ul.p-intro-v-txt li{
+  position: relative;
+  margin-left: 1rem;
+}
+ul.p-intro-v-txt li:before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f1ae';
+  font-weight: 900;
+  position: absolute;
+  left: -1.8rem;
+  color: rgb(255, 200, 0);
+}
+.p-intro-p-v-txt{
+  font-family: "Rounded Mplus 1c";
+}
+.p-intro-movie-body{
+  margin:2rem 8%;
 }
 .p-intro-movie-yt{
   position:relative;
