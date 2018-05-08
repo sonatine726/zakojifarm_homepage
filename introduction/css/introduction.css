@@ -52,10 +52,10 @@
     height: 600px;
   }
 }
-.p-intro-principle-vision{
+#p-intro-principle-vision{
   margin-bottom: 3rem;
 }
-.p-intro-principle-vision h2{
+#p-intro-principle-vision h2{
   margin-left: 0;
 }
 .p-intro-p-txt{

@@ -17,7 +17,7 @@
         ?>
         <li>
           <p class="p-new-blodlist-date"><?php the_time('Y.m.d') ?></p>
-          <div class="p-new-blodlist-link clearfix"><a href="<?php the_permalink() ?>" target="_blank"><span class="p-new-blodlist-thumbnail"><?php the_post_thumbnail('thumbnail'); ?></span><p class="p-new-blodlist-caption"><?php the_title() ?></p><p class="p-new-blodlist-txt"><?php echo mb_substr(get_the_excerpt(), 0, 30); echo '...' ; ?></p></a><div>
+          <div class="p-new-blodlist-link clearfix"><a href="<?php the_permalink() ?>" target="_blank"><span class="p-new-blodlist-thumbnail"><?php the_post_thumbnail('thumbnail'); ?></span><p class="p-new-blodlist-caption"><?php the_title() ?></p><p class="p-new-blodlist-txt"><?php echo mb_substr(get_the_excerpt(), 0, 90); echo '...' ; ?></p></a><div>
         </li>
         <?php endforeach; ?>
       </ul>
