@@ -7,7 +7,7 @@
       let petalCount;
       let fallIntervalMsec = 60;
       if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        petalCount = 90;
+        petalCount = 10;
       } else {
         petalCount = 90;
       }
@@ -81,16 +81,7 @@
       '.t6{border-color:#FF002B;}'+
       '.t7{border-color:#eebbcb;}'+
       '.t8{border-color:#e83929;}'+
-      '.t9{border-color:#38b48b;}'+
-      '.t1::after{border-color:#d0121b;}'+
-      '.t2::after{border-color:#ee7948;}'+
-      '.t3::after{border-color:#ed783d;}'+
-      '.t4::after{border-color:#FDD200;}'+
-      '.t5::after{border-color:#ca3a28;}'+
-      '.t6::after{border-color:#FF002B;}'+
-      '.t7::after{border-color:#eebbcb;}'+
-      '.t8::after{border-color:#e83929;}'+
-      '.t9::after{border-color:#38b48b;}';
+      '.t9{border-color:#38b48b;}';
 
 
 
@@ -161,12 +152,12 @@
           '50%{transform: rotate(-420deg) scale(.5);}'+
           'to{transform: rotate(-149deg) scale(.5);}'+
         '}'+
-        '.fall_1{-webkit-animation:kf_petalFall 20s linear infinite;animation:kf_petalFall 20s linear infinite;}'+
-        '.fall_2{-webkit-animation:kf_petalFall 25s linear infinite;animation:kf_petalFall 25s linear infinite;}'+
-        '.fall_3{-webkit-animation:kf_petalFall 30s linear infinite;animation:kf_petalFall 30s linear infinite;}'+
-        '.fall_4{-webkit-animation:kf_petalFall 35s linear infinite;animation:kf_petalFall 35s linear infinite;}'+
-        '.fall_5{-webkit-animation:kf_petalFall 40s linear infinite;animation:kf_petalFall 40s linear infinite;}'+
-        '.fall_6{-webkit-animation:kf_petalFall 50s linear infinite;animation:kf_petalFall 50s linear infinite;}'+
+        '.fall_1{-webkit-animation:kf_petalFall 30s linear infinite;animation:kf_petalFall 30s linear infinite;}'+
+        '.fall_2{-webkit-animation:kf_petalFall 35s linear infinite;animation:kf_petalFall 35s linear infinite;}'+
+        '.fall_3{-webkit-animation:kf_petalFall 40s linear infinite;animation:kf_petalFall 40s linear infinite;}'+
+        '.fall_4{-webkit-animation:kf_petalFall 45s linear infinite;animation:kf_petalFall 45s linear infinite;}'+
+        '.fall_5{-webkit-animation:kf_petalFall 50s linear infinite;animation:kf_petalFall 50s linear infinite;}'+
+        '.fall_6{-webkit-animation:kf_petalFall 60s linear infinite;animation:kf_petalFall 60s linear infinite;}'+
         '@keyframes kf_petalFall {'+
           'from {transform: translateY(0px);opacity: 1;}'+
           '90% {opacity: 1;}'+
