@@ -7,7 +7,7 @@
       let petalCount;
       let fallIntervalMsec = 60;
       if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        petalCount = 10;
+        petalCount = 90;
       } else {
         petalCount = 90;
       }
@@ -25,64 +25,72 @@
       '.hana_wrapper{'+
       'position:absolute;height:0;width:0;'+
       '}'+
-      '.kaede_1{' + 
-      'position:absolute;height:0;width:0;top:3px;'+
-      'border: 8px solid;'+
-      'border-color: inherit;'+
-      'border-radius: 16px;'+
-      'border-top-right-radius: 0;'+
-      'border-bottom-left-radius: 0;'+
-      '}'+
-      '.kaede_1::before{' + 
-      'content:"";display:block;position:absolute;top:-10px;left:-5px;height:0;width:0;'+
-      'border: 10px solid;'+
-      'border-color: inherit;'+
-      'border-radius: 20px;'+
-      'border-top-right-radius: 0;'+
-      'border-bottom-left-radius: 0;'+
-      'transform-origin:left bottom;' +
-      '-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);'+
-      '}'+
-      '.kaede_1::after{' + 
-      'content:"";display:block;position:absolute;top:-10px;left:-10px;height:0;width:0;'+
-      'border: 7px solid;'+
-      'border-color: inherit;'+
-      'border-radius: 14px;'+
-      'border-top-right-radius: 0;'+
-      'border-bottom-left-radius: 0;'+
-      'transform-origin:left bottom;' +
-      '-webkit-transform: rotate(40deg);-ms-transform: rotate(40deg);transform: rotate(40deg);'+
-      '}'+
-      '.kaede_2{' + 
-      'position:absolute;height:0;width:0;top:3px;left:5px;'+
-      'border: 8px solid;'+
-      'border-color: inherit;'+
-      'border-radius: 30px;'+
-      'border-top-right-radius: 0;'+
-      'border-bottom-left-radius: 0;'+
-      'transform-origin:left bottom;' +
-      '-webkit-transform: rotate(-90deg);-ms-transform: rotate-90deg);transform: rotate(-90deg);'+
-      '}'+
-      '.kaede_2::after{' + 
-      'content:"";display:block;position:absolute;top:-3px;left:-4px;height:0;width:0;'+
-      'border: 7px solid;'+
-      'border-color: inherit;'+
-      'border-radius: 14px;'+
-      'border-top-right-radius: 0;'+
-      'border-bottom-left-radius: 0;'+
-      'transform-origin:left bottom;' +
-      '-webkit-transform: rotate(-48deg);-ms-transform: rotate(-48deg);transform: rotate(-48deg);'+
-      '}'+
-      '.t1{border-color:#d0121b;}'+
-      '.t2{border-color:#ee7948;}'+
-      '.t3{border-color:#ed783d;}'+
-      '.t4{border-color:#FDD200;}'+
-      '.t5{border-color:#ca3a28;}'+
-      '.t6{border-color:#FF002B;}'+
-      '.t7{border-color:#eebbcb;}'+
-      '.t8{border-color:#e83929;}'+
-      '.t9{border-color:#38b48b;}';
-
+      // '.kaede_1{' + 
+      // 'position:absolute;height:0;width:0;top:3px;'+
+      // 'border: 8px solid;'+
+      // 'border-color: inherit;'+
+      // 'border-radius: 16px;'+
+      // 'border-top-right-radius: 0;'+
+      // 'border-bottom-left-radius: 0;'+
+      // '}'+
+      // '.kaede_1::before{' + 
+      // 'content:"";display:block;position:absolute;top:-10px;left:-5px;height:0;width:0;'+
+      // 'border: 10px solid;'+
+      // 'border-color: inherit;'+
+      // 'border-radius: 20px;'+
+      // 'border-top-right-radius: 0;'+
+      // 'border-bottom-left-radius: 0;'+
+      // 'transform-origin:left bottom;' +
+      // '-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);'+
+      // '}'+
+      // '.kaede_1::after{' + 
+      // 'content:"";display:block;position:absolute;top:-10px;left:-10px;height:0;width:0;'+
+      // 'border: 7px solid;'+
+      // 'border-color: inherit;'+
+      // 'border-radius: 14px;'+
+      // 'border-top-right-radius: 0;'+
+      // 'border-bottom-left-radius: 0;'+
+      // 'transform-origin:left bottom;' +
+      // '-webkit-transform: rotate(40deg);-ms-transform: rotate(40deg);transform: rotate(40deg);'+
+      // '}'+
+      // '.kaede_2{' + 
+      // 'position:absolute;height:0;width:0;top:3px;left:5px;'+
+      // 'border: 8px solid;'+
+      // 'border-color: inherit;'+
+      // 'border-radius: 30px;'+
+      // 'border-top-right-radius: 0;'+
+      // 'border-bottom-left-radius: 0;'+
+      // 'transform-origin:left bottom;' +
+      // '-webkit-transform: rotate(-90deg);-ms-transform: rotate-90deg);transform: rotate(-90deg);'+
+      // '}'+
+      // '.kaede_2::after{' + 
+      // 'content:"";display:block;position:absolute;top:-3px;left:-4px;height:0;width:0;'+
+      // 'border: 7px solid;'+
+      // 'border-color: inherit;'+
+      // 'border-radius: 14px;'+
+      // 'border-top-right-radius: 0;'+
+      // 'border-bottom-left-radius: 0;'+
+      // 'transform-origin:left bottom;' +
+      // '-webkit-transform: rotate(-48deg);-ms-transform: rotate(-48deg);transform: rotate(-48deg);'+
+      // '}'+
+      // '.t1{border-color:#d0121b;}'+
+      // '.t2{border-color:#ee7948;}'+
+      // '.t3{border-color:#ed783d;}'+
+      // '.t4{border-color:#FDD200;}'+
+      // '.t5{border-color:#ca3a28;}'+
+      // '.t6{border-color:#FF002B;}'+
+      // '.t7{border-color:#eebbcb;}'+
+      // '.t8{border-color:#e83929;}'+
+      // '.t9{border-color:#38b48b;}';
+      '.t1{color:#d0121b;}'+
+      '.t2{color:#ee7948;}'+
+      '.t3{color:#ed783d;}'+
+      '.t4{color:#FDD200;}'+
+      '.t5{color:#ca3a28;}'+
+      '.t6{color:#FF002B;}'+
+      '.t7{color:#eebbcb;}'+
+      '.t8{color:#e83929;}'+
+      '.t9{color:#38b48b;}';
 
 
       htmlCode = htmlCode +
@@ -195,13 +203,16 @@
         var clss = 'hana t'+(Math.floor(Math.random()*9)+1)+' y'+(Math.floor(Math.random()*6)+1);
         m.setAttribute('class',clss);
 
-        var m_img_1 = d.createElement('div');
-        m_img_1.setAttribute('class', 'kaede_1');
-        var m_img_2 = d.createElement('div')
-        m_img_2.setAttribute('class', 'kaede_2');
+        // var m_img_1 = d.createElement('div');
+        // m_img_1.setAttribute('class', 'kaede_1');
+        // var m_img_2 = d.createElement('div')
+        // m_img_2.setAttribute('class', 'kaede_2');
+        // m.appendChild(m_img_1);
+        // m.appendChild(m_img_2);
 
-        m.appendChild(m_img_1);
-        m.appendChild(m_img_2);
+        var m_img = d.createElement('i');
+        m_img.setAttribute('class', 'kaede ali ali-maple_icon');
+        m.appendChild(m_img);
         m_wrapper_2.appendChild(m);
         m_wrapper.appendChild(m_wrapper_2);
         q.appendChild(m_wrapper);
