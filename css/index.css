@@ -61,10 +61,13 @@
 .p-top-plugins-newblog{
   width: 100%;
 }
-.p-wp-newblog-plgin{
+.p-top-principle{
   width: 100%;
-  border: none;
-  overflow: hidden;
+}
+.p-top-principle > img{
+  width: 100%;
+  height: auto;
+  border: solid 1px #FFC800;
 }
 .p-top-plugin-fb{
   width: 100%;
@@ -79,15 +82,16 @@
   .p-top-plugins{
     flex-direction: row;
   }
-  .p-top-plugins-newblog{
-    width: 55%;
+  .p-top-principle{
+    width: 40%;
+    height: auto;
   }
   .p-top-plugin-fb{
-    width: 28%;
+    width: 30%;
     padding: 0;
   }
   .p-tweet-plugin{
-    width: 15%;
+    width: 28%;
     padding: 0;
   }
 }
